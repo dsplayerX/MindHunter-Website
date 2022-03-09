@@ -3,7 +3,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
+    <title>Mindhunter Bookstore &middot; Contact Us</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../style/navbar.css">
@@ -12,7 +12,7 @@
 <body>
     <! navigation bar>
     <nav>
-        <label class="sitelogo">MINDHUNTER LIBRARY</label>
+        <label class="sitelogo">MINDHUNTER BOOKSTORE</label>
         <ul>
             <li><a href="mainpage.html">Home</a></li>
             <li><a href="#">Store</a></li>
@@ -20,17 +20,25 @@
             <li><a href="#">Thumbnail Images</a></li>
             <li><a class="active" href="queryform.html">Query</a></li>
             <li><a href="#">Sitemap</a></li>
-            <li><a href="#">Student Details</a></li>
+            <li><a href="studentdetails.html">Student Details</a></li>
         </ul>
     </nav>
-    <form>
-        <fieldset>
+    <form action="mailto:#email" enctype="text/plain" method="post"><! CHECK HEREEEEEE>
+        <h1>CONTACT US</h1>
+        <fieldset id="formfeild">
+            <legend>Details</legend>
             <label for="name">Name:</label>
             <input type="text" name="name" id="name"><br>
             <label for="email">Email:</label>
             <input type="email" name="email" id="email"><br>
-            
-
+            <label for="tel">Contact No.:</label>
+            <input type="tel" name="tel" id="tel"><br>
+            <Label for="query">Enter your query: </Label>
+            <textarea id="query"></textarea>
+        </fieldset>
+        <fieldset id="buttonfeild">
+            <input type="submit" name="submitbutton" value="Submit">
+            <input type="reset" name="resetbutton" value="Reset">
         </fieldset>
     </form>
 </body>
