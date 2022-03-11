@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../style/navbar.css">
+    <link rel="stylesheet" href="../style/queryformstyle.css">
 </head>
 
 <body>
@@ -18,7 +19,7 @@
             <li><a href="#">Store</a></li>
             <li><a href="quiz.html">Quiz</a></li>
             <li><a href="#">Thumbnail Images</a></li>
-            <li><a class="active" href="queryform.html">Query</a></li>
+            <li><a class="active" href="queryform.html">Contact Us</a></li>
             <li><a href="#">Sitemap</a></li>
             <li><a href="studentdetails.html">Student Details</a></li>
         </ul>
@@ -33,8 +34,15 @@
             <input type="email" name="email" id="email"><br>
             <label for="tel">Contact No.:</label>
             <input type="tel" name="tel" id="tel"><br>
+            <p>Theme of the query:</p>
+            <input type="radio" name="querytype" id="delivery">
+            <label for="buyoverboard">Delivery</label><br>
+            <input type="radio" name="querytype" id="requesting">
+            <label for="requesting">Requesting a non-listed book</label><br>
+            <input type="radio" name="querytype" id="badservice">
+            <label for="badservice">Service Related</label><br> <!gotta change the themes... IK
             <Label for="query">Enter your query: </Label>
-            <textarea id="query"></textarea>
+            <textarea cols="40" rows="10" id="query"></textarea>
         </fieldset>
         <fieldset id="buttonfeild">
             <input type="submit" name="submitbutton" value="Submit">
