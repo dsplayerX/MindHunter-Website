@@ -12,12 +12,20 @@ body {
     background-color: rgb(153, 177, 177);
 }
 
+
 nav {
     background-color: rgb(87, 53, 0);
     height: 80px;
     width: 100%;
 }
 
+nav img {
+    width: 300px;
+    margin-top: -20px;
+    margin-left: 30px;
+}
+
+/*
 label.sitelogo {
     color:white;
     font-size: 25px;
@@ -25,6 +33,7 @@ label.sitelogo {
     padding: 0 100px;
     font-weight: bold;
 }
+*/
 
 nav ul {
     float: right;
@@ -41,7 +50,7 @@ nav ul li a {
     color: white;
     font-size: 17px;
     padding: 7px 13px;
-    border-radius: 3px;
+    border-radius: 10px;
     text-transform: uppercase;
 }
 
