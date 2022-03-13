@@ -5,15 +5,15 @@
     text-decoration: none;
     list-style: none;
     box-sizing: border-box;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
 }
 
 body {
-    background-color: rgb(153, 177, 177);
+    background-color: rgb(197, 197, 197);
 }
 
 
 nav {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: rgb(87, 53, 0);
     height: 80px;
     width: 100%;

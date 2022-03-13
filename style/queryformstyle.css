@@ -18,3 +18,15 @@ form {
     float:right;
     margin: 15vh 20vh 10vh 10vh;
 }
+
+#linktofaqs {
+    color: white;
+}
+
+#linktofaqs a:link {
+    color: rgb(255, 0, 0);
+}
+
+#linktofaqs a:visited {
+    color: rgb(255, 64, 64);
+}
