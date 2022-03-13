@@ -21,8 +21,15 @@ nav {
 
 nav img {
     width: 300px;
-    margin-top: -20px;
+    margin-top: 6px;
     margin-left: 30px;
+    cursor: pointer;
+    padding: 5px;
+}
+
+nav img:hover{
+    margin-left: 50px;
+    transition: 0.5s;
 }
 
 /*
@@ -54,12 +61,12 @@ nav ul li a {
     text-transform: uppercase;
 }
 
-a.active{
+nav ul li a.active{
     background-color: rgb(156, 68, 9);
     transition: .5s;
 }
 
-a:hover{
+nav ul li a:hover{
     background-color: rgb(209, 118, 57);
     transition: .5s;
 }
