@@ -1,0 +1,12 @@
+body{
+    font-size: 20px;
+    font-weight: bolder;
+    margin-left: 2rem;
+}
+
+#btton{
+    background-color: black;
+    color: white;
+    font-size: 18px;
+    padding: 6px;
+}
