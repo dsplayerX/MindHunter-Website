@@ -1,7 +1,12 @@
 /*Quiz javascript - Diman*/
 
+function on(){
+	c = 60;
+}
+
 function mark(){
 	var a=0;
+	var b=0;
 	var qt1=document.qz.q1.value;
 	var qt2=document.qz.q2.value;
 	var qt3=document.qz.q3.value;
@@ -15,25 +20,43 @@ function mark(){
     var out=document.getElementById('out');
 	
 	if (qt1=="lib3"){a= a+2}
-    else{a=a-1}
+	else{b++}
 	if (qt2=="lib23"){a= a+2}
-    else{a=a-1}
+	else{b++}
 	if (qt3=="lib34"){a= a+2}
-    else{a=a-1}
+	else{b++}
 	if (qt4=="lib44"){a= a+2}
-    else{a=a-1}
+	else{b++}
 	if (qt5=="lib54"){a= a+2}
-    else{a=a-1}
+	else{b++}
 	if (qt6=="lib62"){a= a+2}
-    else{a=a-1}
+	else{b++}
 	if (qt7=="lib74"){a= a+2}
-    else{a=a-1}
+	else{b++}
 	if (qt8=="lib83"){a= a+2}
-    else{a=a-1}
+	else{b++}
 	if (qt9=="lib93"){a= a+2}
-    else{a=a-1}
+	else{b++}
 	if (qt10=="lib101"){a= a+2}
-    else{a=a-1}
+	else{b++}
 
-    out.textContent= `${a}`;
+	if(a<=3){
+		out.textContent=`Your result is ${a-b}. It is not so good please try to work hard.` 
+	}
+	else{
+		out.textContent=`Your result is ${a-b}. It is awsome.Keep it up!`
+	}
 }
+
+function timer001(){
+	c = c -1;
+	if (c<60){
+		time001.innerHTML = c; 
+	}
+
+	if(c<1){
+		window.clearInterval(update);
+	}
+}
+
+update = setInterval("timer001()",1000);
