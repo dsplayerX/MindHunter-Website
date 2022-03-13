@@ -1,3 +1,5 @@
+/*Quiz javascript - Diman*/
+
 function mark(){
 	var a=0;
 	var qt1=document.qz.q1.value;
