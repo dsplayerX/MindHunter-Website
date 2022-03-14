@@ -9,6 +9,8 @@
     <link rel="shortcut icon" href="images/title-logo.png" type="image/x-icon">
     <link rel="stylesheet" href="style/navbarstyle.css">
     <link rel="stylesheet" href="style/queryformstyle.css">
+    <script type="text/javascript" src="javascript/queryform.js"></script>
+
 </head>
 
 <body>
@@ -27,37 +29,73 @@
             <li><a href="studentdetails.html">Student Details</a></li>
         </ul>
     </nav>
-
-    <div>
-    <form action="mailto:#email" enctype="text/plain" method="post"><! CHECK HEREEEEEE>
-        <h1>CONTACT US</h1>
+    
+    <div class="navbar">
+    <form name="contactusform"><! CHECK HEREEEEEE>
+        <h1 id="formtitle">Contact Us</h1>
         <fieldset id="formfeild">
-            <legend>Details</legend>
-            <label for="name">Name:</label>
-            <input type="text" name="name" id="name"><br>
-            <label for="email">Email:</label>
-            <input type="email" name="email" id="email"><br>
-            <label for="tel">Contact No.:</label>
-            <input type="tel" name="tel" id="tel"><br>
-            <p>Subject:</p>
-            <!--CHANGE THESE TO A DROPDOWN LIST-->
-            <input type="radio" name="querytype" id="delivery">
-            <label for="buyoverboard">Delivery</label><br>
-            <input type="radio" name="querytype" id="requesting">
-            <label for="requesting">Requesting a non-listed book</label><br>
-            <input type="radio" name="querytype" id="badservice">
-            <label for="badservice">Service Related</label><br> <!--gotta change the themes... IK-->
-            <Label for="query">How can we help? </Label><br>
-            <textarea cols="40" rows="10" id="query" placeholder="Enter your query here."></textarea>
+            <div class="details">
+                <legend>Details</legend>
+                <label for="name">Name:</label>
+                <input type="text" name="name" id="name"><br>
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email"><br>
+                <label for="tel">Contact No.:</label>
+                <input type="tel" name="tel" id="tel"><br>
+                <label for="subject">Subject:</label>
+                <select name="subject" id="subject">
+                    <option value="delivery">Delivery</option>
+                    <option value="payment">Payment</option>
+                    <option value="requestbook">Requesting a non-listed book</option>
+                    <option value="cancelledorder">Cancelled Order</option>
+                    <option value="other">Other</option>
+                </select><br>
+                <Label for="query">How can we help? </Label><br>
+                <textarea cols="40" rows="10" id="query" placeholder="Enter your query here."></textarea>
+            </div>
         </fieldset>
-        <fieldset id="buttonfeild">
-            <input type="submit" name="submitbutton" value="Submit">
-            <input type="reset" name="resetbutton" value="Reset">
-        </fieldset>
+        <div class="buttons">
+            <fieldset id="buttonfeild">
+                <input type="button" onclick="validateForm();" name="viewquery" value="View Query" >
+                <input type="reset" name="resetbutton" value="Reset">
+            </fieldset>
+        </div>
+        
     </form>
     </div>
-    <div id="linktofaqs">
-        <p>To see the frequently asked questions <a href="additional-content/faqs.html">click here</a>!</p>
+    <div class="leftinfo">
+        <div class="contactinfo">
+            <div class="infobox">
+                <div class="icon"><img src="images/map-logo.png" alt="Map Logo"></div>
+                <div class="text">
+                    <h3>Address</h3>
+                    <p>221B, Baker Street, London.</p>
+                    <br>
+                </div>
+            </div>
+            <div class="infobox">
+                <div class="icon"><img src="images/email-logo.png" alt="Email Logo"></div>
+                <div class="text">
+                    <h3>Email</h3>
+                    <p>contact.info@mindhunter.com</p>
+                    <br>
+                </div>
+            </div>
+            <div class="infobox">
+                <div class="icon"><img src="images/phone-logo.png" alt="Phone Logo"></div>
+                <div class="text">
+                    <h3>Phone</h3>
+                    <p>+1-112-224-448</p>
+                    <br>
+                </div>
+            </div>
+        </div>
+        <div class="linktofaqs">
+            <h3>FAQs</h3>
+            <p>To see the frequently asked questions</p><br>
+            <a href="additional-content/faqs.html">click here</a>
+        </div>
     </div>
+    
 </body>
 </html>

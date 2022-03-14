@@ -7,31 +7,90 @@
 
 body {
     background-image: url("../images/bookshelf.jpg");
-    position: relative;
 }
 
 
 form {
-    background-color: rgba(255, 255, 255, 0.918);
+    background-color: rgba(255, 255, 255, 0.85);
     border-radius:15px;
     padding: 25px;
     float:right;
-    margin: 15vh 20vh 10vh 10vh;
+    margin: 15vh 30vh 10vh 10vh;
 }
 
-#linktofaqs {
+form fieldset{
+    border: none;
+}
+
+form #formtitle{
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 10px;
+    
+}
+
+form .details label{
+    display: inline-block;
+    width: 100px;
+    text-align: right;
+    margin-bottom: 10px;
+}
+
+form .details input, select{
+    padding: 2.5px 5px;
+    width: 200px;
+    margin-bottom: 10px;
+}
+
+form textarea{
+    margin-left:20px
+}
+
+
+.details {
+    margin: 10px 10px 10px 10px;
+}
+
+
+.leftinfo{
     display: block;
+    width: fit-content;
     float:left;
-    padding: 10px;
-    margin: 1100px 20px 100px 100px;
-    background-color: black;
+    background-color: rgb(255, 255, 255, 0.85);
+    border-radius:15px;
+    padding: 25px;
+    margin: 15vh 20vh 10vh 30vh;
+}
+
+.leftinfo .contactinfo img {
+    width: 50px;
+    height: auto;
+}
+
+
+
+.linktofaqs a:link {
+    color: rgb(255, 255, 255);
+}
+
+.linktofaqs a:visited {
+    color: rgb(255, 255, 255);
+}
+
+.linktofaqs a{
+    margin-left: 75px;
+    margin-top: 10px;
+    background-color:rgb(156, 68, 9);
+    border-radius: 10px;
+    padding: 5px 10px 5px 10px;
+}
+
+.linktofaqs a:hover{
+    background-color: rgb(209, 118, 57);
     color: white;
+    transition: .5s;
 }
 
-#linktofaqs a:link {
-    color: rgb(255, 0, 0);
-}
-
-#linktofaqs a:visited {
-    color: rgb(255, 64, 64);
+.linktofaqs h3, .linktofaqs p{
+    color:rgb(127, 56, 8) ;
 }
