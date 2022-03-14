@@ -1,6 +1,5 @@
 body {
-    background-image: url(/images/questionmark-bluebackgorund.jpg);
-    position: relative;
+    background-image: url('../images/questionmark-bluebackgorund.jpg');
 }
 
 #faqcontent {
