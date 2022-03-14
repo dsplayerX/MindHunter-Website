@@ -41,10 +41,10 @@ function mark(){
 	else{b++}
 
 	if(a<=3){
-		out.textContent=`Your result is ${a-b}. It is not so good please try to work hard.` 
+		out.textContent=`Your result is ${a-b}. Work Hard.` 
 	}
 	else{
-		out.textContent=`Your result is ${a-b}. It is awsome.Keep it up!`
+		out.textContent=`Your result is ${a-b}. Keep it up!`
 	}
 }
 
