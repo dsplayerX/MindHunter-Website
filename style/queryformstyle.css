@@ -9,13 +9,18 @@ body {
     background-image: url("../images/bookshelf.jpg");
 }
 
+/*
+.formcontent {
+    display: none;
+}
+*/
 
 form {
     background-color: rgba(255, 255, 255, 0.85);
     border-radius:15px;
     padding: 25px;
     float:right;
-    margin: 15vh 30vh 10vh 10vh;
+    margin: 10vh 30vh 10vh 10vh;
 }
 
 form fieldset{
@@ -25,25 +30,36 @@ form fieldset{
 form #formtitle{
     font-size: 40px;
     text-align: center;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
     
 }
 
 form .details label{
     display: inline-block;
-    width: 100px;
-    text-align: right;
-    margin-bottom: 10px;
+    width: 400px;
+    text-align: left;
+    margin-bottom: 5px;
+}
+
+form #querylabel {
+    text-align: left;
+    width: 200px;
 }
 
 form .details input, select{
-    padding: 2.5px 5px;
-    width: 200px;
+    padding: 5px;
+    width: 100%;
+    height:40px;
     margin-bottom: 10px;
+    border-radius: 10px;
+    border-style: none;
 }
 
 form textarea{
-    margin-left:20px
+    border-radius: 10px;
+    border-style: none;
+    width: 100%;
+    padding: 10px;
 }
 
 
@@ -59,7 +75,7 @@ form textarea{
     background-color: rgb(255, 255, 255, 0.85);
     border-radius:15px;
     padding: 25px;
-    margin: 15vh 20vh 10vh 30vh;
+    margin: 10vh 20vh 10vh 30vh;
 }
 
 .leftinfo .contactinfo img {

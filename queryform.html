@@ -30,39 +30,39 @@
         </ul>
     </nav>
     
-    <div class="navbar">
-    <form name="contactusform"><! CHECK HEREEEEEE>
-        <h1 id="formtitle">Contact Us</h1>
-        <fieldset id="formfeild">
-            <div class="details">
-                <legend>Details</legend>
-                <label for="name">Name:</label>
-                <input type="text" name="name" id="name"><br>
-                <label for="email">Email:</label>
-                <input type="email" name="email" id="email"><br>
-                <label for="tel">Contact No.:</label>
-                <input type="tel" name="tel" id="tel"><br>
-                <label for="subject">Subject:</label>
-                <select name="subject" id="subject">
-                    <option value="delivery">Delivery</option>
-                    <option value="payment">Payment</option>
-                    <option value="requestbook">Requesting a non-listed book</option>
-                    <option value="cancelledorder">Cancelled Order</option>
-                    <option value="other">Other</option>
-                </select><br>
-                <Label for="query">How can we help? </Label><br>
-                <textarea cols="40" rows="10" id="query" placeholder="Enter your query here."></textarea>
-            </div>
-        </fieldset>
-        <div class="buttons">
-            <fieldset id="buttonfeild">
-                <input type="button" onclick="validateForm();" name="viewquery" value="View Query" >
-                <input type="reset" name="resetbutton" value="Reset">
+    <div class="formcontent" id="formcontent">
+        <form name="contactusform">
+            <h1 id="formtitle">Contact Us</h1>
+            <fieldset id="formfeild">
+                <div class="details">
+                    <!--legend>Details</legend-->
+                    <label for="name">Name:</label><br>
+                    <input type="text" name="name" id="name"><br>
+                    <label for="email">Email:</label><br>
+                    <input type="email" name="email" id="email"><br>
+                    <label for="tel">Contact Number:</label><br>
+                    <input type="tel" name="tel" id="tel"><br>
+                    <label for="subject">Subject:</label><br>
+                    <select name="subject" id="subject">
+                        <option value="delivery">Delivery</option>
+                        <option value="payment">Payment</option>
+                        <option value="requestbook">Requesting a non-listed book</option>
+                        <option value="cancelledorder">Cancelled Order</option>
+                        <option value="other">Other</option>
+                    </select><br>
+                    <Label for="query" id="querylabel">How can we help? </Label><br>
+                    <textarea cols="40" rows="10" id="query" placeholder="Enter your query here."></textarea>
+                </div>
             </fieldset>
-        </div>
-        
-    </form>
+            <div class="buttons">
+                <fieldset id="buttonfeild">
+                    <input type="button" onclick="validateForm();" name="viewquery" value="View Query">
+                    <input type="reset" name="resetbutton" value="Reset">
+                </fieldset>
+            </div>
+        </form>
     </div>
+
     <div class="leftinfo">
         <div class="contactinfo">
             <div class="infobox">
