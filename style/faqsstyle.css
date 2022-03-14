@@ -1,12 +1,16 @@
-#faqs {
+body {
+    background-image: url(/images/questionmark-bluebackgorund.jpg);
+    position: relative;
+}
+
+#faqcontent {
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     margin-left: 40px;
     margin-right: 40px;
-    padding-top: 100px;
+    padding-top: 25px;
 }
 
 h1 {
-    background-color: rgb(87, 53, 0);
     margin: 0 auto 0 auto;
     width: fit-content;
     padding: 10px;
@@ -15,4 +19,40 @@ h1 {
     text-align: center;
     font-size: 50px;
     margin-bottom: 25px;
+}
+
+#questions {
+    margin: 40px 150px 50px 150px;
+    background-color: rgba(255, 255, 255, 0.85);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+#navforfaq {
+    width: fit-content;
+    margin: 0 auto 0 auto;
+}
+
+#navforfaq ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 auto;
+}
+
+#navforfaq ul li a {
+    color: white;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 10px;
+    text-transform: uppercase;
+}
+
+#navforfaq ul li a.active{
+    background-color: rgb(156, 68, 9);
+    transition: .5s;
+}
+
+#navforfaq ul li a:hover{
+    background-color: rgb(209, 118, 57);
+    transition: .5s;
 }
