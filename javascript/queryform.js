@@ -1,4 +1,3 @@
-
 function validateForm() {
     let name=document.getElementById("name").value;
     let email=document.getElementById("email").value;
@@ -38,4 +37,10 @@ function validateForm() {
 
 function displayQuery() {
     document.getElementById("formcontent").style.display="none";
+    document.getElementById("verifiedformcontent").style.display="block";
+}
+
+function showEnteredInfo() {
+    document.getElementById("displayname").innerHTML=document.getElementById("name").value;
+    
 }

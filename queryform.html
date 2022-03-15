@@ -56,14 +56,29 @@
             </fieldset>
             <div class="buttons">
                 <fieldset id="buttonfeild">
-                    <input type="button" onclick="validateForm();" name="viewquery" value="View Query">
+                    <input type="button" onclick="validateForm(); showEnteredInfo();" name="viewquery" value="View Query">
                     <input type="reset" name="resetbutton" value="Reset">
                 </fieldset>
             </div>
         </form>
     </div>
 
+    <div class="verifiedformcontent" id="verifiedformcontent">
+        <h4>Name:</h4><a id="displayname"></a>
+        <h4>Email:</h4><a id="displayemail"></a>
+        <h4>Contact Number:</h4><a id="displaycontact"></a>
+        <h4>Subject:</h4><a id="displaysubject"></a>
+        <h4>Query:</h4><a id="displayquery"></a>
+        <input type="button" name="editbutton" value="Edit">
+        <input type="button" name="sendbutton" value="Send">
+        
+    </div>
+
     <div class="leftinfo">
+        <div class="quote">
+            <p id="lequote"><em>"A book is a gift you can open again and again"</em></p>
+            <p id="lequotedfrom">Garrison Keillor</p>
+        </div>
         <div class="contactinfo">
             <div class="infobox">
                 <div class="icon"><img src="images/map-logo.png" alt="Map Logo"></div>
@@ -77,7 +92,7 @@
                 <div class="icon"><img src="images/email-logo.png" alt="Email Logo"></div>
                 <div class="text">
                     <h3>Email</h3>
-                    <p>contact.info@mindhunter.com</p>
+                    <p>contact.us@mindhunter.com</p>
                     <br>
                 </div>
             </div>
@@ -85,7 +100,7 @@
                 <div class="icon"><img src="images/phone-logo.png" alt="Phone Logo"></div>
                 <div class="text">
                     <h3>Phone</h3>
-                    <p>+1-112-224-448</p>
+                    <p>+1 112 224 448</p>
                     <br>
                 </div>
             </div>

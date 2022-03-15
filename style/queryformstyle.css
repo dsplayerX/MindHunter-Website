@@ -15,6 +15,16 @@ body {
 }
 */
 
+/*
+.verifiedformcontent {
+    display: none;
+}*/
+
+.verifiedformcontent {
+    width: fit-content;
+    background-color: red;
+}
+
 form {
     background-color: rgba(255, 255, 255, 0.85);
     border-radius:15px;
@@ -67,15 +77,45 @@ form textarea{
     margin: 10px 10px 10px 10px;
 }
 
+.leftinfo .quote{
+    display: block;
+    width: 400px;
+    float:left;
+    /*background-color: rgb(255, 255, 255, 0.85);*/
+    border-radius:15px;
+    padding: 25px;
+    margin: 80px 20px 20px 220px;
+}
 
-.leftinfo{
+.leftinfo .contactinfo{
+    display: block;
+    width: 400px;
+    float:left;
+    background-color: rgb(255, 255, 255, 0.85);
+    border-radius:15px;
+    padding: 25px;
+    margin: 10px 20px 20px 220px;
+}
+
+.leftinfo .linktofaqs{
     display: block;
     width: fit-content;
     float:left;
     background-color: rgb(255, 255, 255, 0.85);
     border-radius:15px;
     padding: 25px;
-    margin: 10vh 20vh 10vh 30vh;
+    margin: 10px 20px 20px 270px;
+}
+
+.leftinfo .quote #lequote{
+    color:rgb(255, 255, 255);
+    font-size: 32px;
+}
+
+.leftinfo .quote #lequotedfrom{
+    text-align: right;
+    color:rgb(209, 118, 57);
+    font-size: 16px;
 }
 
 .leftinfo .contactinfo img {
@@ -97,7 +137,7 @@ form textarea{
     margin-left: 75px;
     margin-top: 10px;
     background-color:rgb(156, 68, 9);
-    border-radius: 10px;
+    border-radius: 8px;
     padding: 5px 10px 5px 10px;
 }
 
@@ -105,8 +145,4 @@ form textarea{
     background-color: rgb(209, 118, 57);
     color: white;
     transition: .5s;
-}
-
-.linktofaqs h3, .linktofaqs p{
-    color:rgb(127, 56, 8) ;
 }
