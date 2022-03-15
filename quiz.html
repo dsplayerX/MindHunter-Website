@@ -32,9 +32,9 @@
     <br>
     <div id="quizform">
         <!--ADD A PROPER TITLE AND A PARAGRAPH ABOUT THE QUIZ -dumindu -->
-        <h2>QUIZ</h2><br>
+        <h1>QUIZ</h1><br>
         <form id="qz" name="qz">
-            <div onclick="on()">
+            <div onclick="on()"  id="count">
                 <p>1.What is a library collection ?</p><br>
                 <p><input type="radio" name="q1" value="lib1">A. A set of magazine subscriptions in the library</p>
                 <p><input type="radio" name="q1" value="lib2">B. A fundraising drive for the school library</p>
@@ -118,8 +118,12 @@
         </form>
         <br>
 
-        <h4>Quiz Result: </h4>
-        <h4 id="out"></h4>
+        <div>
+            <h4>Quiz Result: </h4>
+            <h4 id="out"></h4>
+            <h4>Used Time: </h4>
+            <h4 id="rtime"></h4>
+        </div>
     </div>
 </body>
 </html>
