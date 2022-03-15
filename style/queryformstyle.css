@@ -13,26 +13,27 @@ body {
     display: block;
 }
 
-.verifiedformcontent {
+.verifiedouter {
     display: none;
+    float:right;
+    margin: 5vh 30vh 5vh 10vh;
+    width: 500px;
+    height: 750px;
+}
+.verifiedformcontent {
     background-color: rgba(255, 255, 255, 0.85);
     border-radius:15px;
     padding: 25px;
-    float:right;
-    margin: 10vh 30vh 10vh 10vh;
-    width: 500px;
-    height: 700px;
 }
-
 
 form {
     background-color: rgba(255, 255, 255, 0.85);
     border-radius:15px;
     padding: 25px;
     width: 500px;
-    height: 700px;
+    height: 750px;
     float:right;
-    margin: 10vh 30vh 10vh 10vh;
+    margin: 5vh 30vh 5vh 10vh;
 }
 
 form fieldset{
@@ -42,7 +43,7 @@ form fieldset{
 form #formtitle{
     font-size: 40px;
     text-align: center;
-    margin-bottom: 15px;
+    margin-bottom: 12px;
     
 }
 
@@ -59,15 +60,17 @@ form #querylabel {
 }
 
 form .details input, select{
+    font-size: 16px;
     padding: 5px;
     width: 100%;
     height:40px;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
     border-radius: 10px;
     border-style: none;
 }
 
 form textarea{
+    font-size: 16px;
     border-radius: 10px;
     border-style: none;
     width: 100%;
@@ -78,8 +81,75 @@ form #submitbutton {
     display: none;
 }
 
+form #viewquerybutton {
+    font-size: 16px;
+    padding: 10px 15px;
+    border-radius:10px;
+    background-color:rgb(156, 68, 9);
+    color: white;
+    margin-left: 165px;
+    margin-top: 20px;
+    border-style: none;
+}
+
+form #resetbutton{
+    font-size: 16px;
+    padding: 8px 12px;
+    border-radius:10px;
+    background-color:rgb(98, 98, 98);
+    color: white;
+    margin-left: 90px;
+    margin-top: 20px;
+    border-style: none;
+}
+
+form #viewquerybutton:hover, form #resetbutton:hover {
+    background-color: rgb(209, 118, 57);
+}
+
+.verifiedformcontent h3 {
+    width: 100%;
+    text-align: center;
+    font-size: 32px;
+}
+
+.verifiedformcontent h4 {
+    margin-top: 15px;
+    font-size: 16px;
+}
+
+.verifiedformcontent a {
+    font-size: 18px;
+}
+
+.verifiedformcontent #sendbutton {
+    font-size: 16px;
+    padding: 10px 16px;
+    border-radius:10px;
+    background-color:rgb(156, 68, 9);
+    color: white;
+    border-style: none;
+    margin-left: 175px;
+    margin-top: 25px;
+}
+
+.verifiedformcontent #editbutton {
+    font-size: 16px;
+    padding: 8px 12px;
+    border-radius:10px;
+    background-color:rgb(98, 98, 98);
+    color: white;
+    border-style: none;
+    margin-left: 90px;
+    margin-top: 25px;
+}
+
+.verifiedformcontent #editbutton:hover, .verifiedformcontent #sendbutton:hover {
+    background-color: rgb(209, 118, 57);
+}
+
 .details {
-    margin: 10px 10px 10px 10px;
+    margin: 20px 10px 10px 10px;
 }
 
 .leftinfo .quote{
@@ -89,14 +159,14 @@ form #submitbutton {
     /*background-color: rgb(255, 255, 255, 0.85);*/
     border-radius:15px;
     padding: 25px;
-    margin: 80px 20px 20px 220px;
+    margin: 20px 20px 20px 220px;
 }
 
 .leftinfo .contactinfo{
     display: block;
     width: 400px;
     float:left;
-    background-color: rgb(255, 255, 255, 0.85);
+    background-color: rgba(255, 255, 255, 0.85);
     border-radius:15px;
     padding: 25px;
     margin: 10px 20px 20px 220px;
@@ -126,9 +196,19 @@ form #submitbutton {
 .leftinfo .contactinfo img {
     width: 50px;
     height: auto;
+    margin-left: 150px;
 }
 
+.leftinfo .contactinfo .infobox h3 {
+    font-size: 16px;
+    text-align: center;
+} 
 
+.leftinfo .contactinfo .infobox p {
+    font-size: 18px;
+    color: rgb(156, 68, 9);
+    text-align: center;
+}
 
 .linktofaqs a:link {
     color: rgb(255, 255, 255);

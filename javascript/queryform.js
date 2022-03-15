@@ -21,7 +21,7 @@ function validateForm() {
     } else if (tel==null || tel=="") {
         alert("Contact number field cannot be empty!")
         return false;
-    } else if ((!/^[0-9]+$/.test(tel)) || (tel.length < 9)) { //taken from https://stackoverflow.com/questions/10713749/javascript-validation-numbers-only
+    } else if ((!/^[0-9]+$/.test(tel)) || (tel.length < 9) || (tel.length > 10)) { // first condition taken from https://stackoverflow.com/questions/10713749/javascript-validation-numbers-only
         alert("Enter a valid phone number!")
         return false; 
     } else if ( querytext==null || querytext=="") {
@@ -38,17 +38,17 @@ function validateForm() {
 
 function displayQuery() {
     document.getElementById("formcontent").style.display="none";
-    document.getElementById("verifiedformcontent").style.display="block";
+    document.getElementById("verifiedouter").style.display="block";
 }
 
 function hideQuery() {
     document.getElementById("formcontent").style.display="block";
-    document.getElementById("verifiedformcontent").style.display="none";
+    document.getElementById("verifiedouter").style.display="none";
 }
 
 function editQuery() {
     document.getElementById("formcontent").style.display="block";
-    document.getElementById("verifiedformcontent").style.display="none";
+    document.getElementById("verifiedouter").style.display="none";
 }
 
 function showEnteredInfo() {

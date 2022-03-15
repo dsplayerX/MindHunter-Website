@@ -56,26 +56,27 @@
             </fieldset>
             <div class="buttons">
                 <fieldset id="buttonfeild">
-                    <input type="button" onclick="validateForm();" name="viewquery" value="View Query">
+                    <input type="button" onclick="validateForm(); window.scrollTo(0, -100);" name="viewquery" id="viewquerybutton" value="View Query"> 
+                    <!--Scroll to top takeb from https://www.codegrepper.com/code-examples/css/scroll+on+click+javascript-->
                     <input type="reset" name="resetbutton" id="resetbutton" value="Reset">
                     <input type="submit" name="submitbutton" id="submitbutton" value="Submit">
                 </fieldset>
             </div>
         </form>
     </div>
-
-    <div class="verifiedformcontent" id="verifiedformcontent">
-        <h3>Your Query Details</h3><br>
-        <h4>Name:</h4><a id="displayname"></a><br>
-        <h4>Email:</h4><a id="displayemail"></a><br>
-        <h4>Contact Number:</h4><a id="displaycontact"></a><br>
-        <h4>Subject:</h4><a id="displaysubject"></a><br>
-        <h4>Query:</h4><a id="displayquery"></a><br>
-        <input type="button" name="editbutton" value="Edit" onclick="editQuery();"">
-        <br>
-        <input type="submit" name="sendbutton" value="Send" onclick="hideQuery(); document.getElementById('submitbutton').click(); document.getElementById('resetbutton').click();">
-        
+    <div class="verifiedouter" id="verifiedouter">
+        <div class="verifiedformcontent" id="verifiedformcontent">
+            <h3>Your Query Details</h3><br>
+            <h4>Name:</h4><a id="displayname"></a><br>
+            <h4>Email:</h4><a id="displayemail"></a><br>
+            <h4>Contact Number:</h4><a id="displaycontact"></a><br>
+            <h4>Subject:</h4><a id="displaysubject"></a><br>
+            <h4>Query:</h4><a id="displayquery"></a><br>
+            <input type="submit" name="sendbutton" id="sendbutton" value="Send" onclick="hideQuery(); document.getElementById('submitbutton').click(); document.getElementById('resetbutton').click();">
+            <input type="button" name="editbutton" id="editbutton" value="Edit" onclick="editQuery();">
+        </div>
     </div>
+    
 
     <div class="leftinfo">
         <div class="quote">
