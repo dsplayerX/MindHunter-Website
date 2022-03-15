@@ -9,26 +9,28 @@ body {
     background-image: url("../images/bookshelf.jpg");
 }
 
-/*
 .formcontent {
-    display: none;
+    display: block;
 }
-*/
-
-/*
-.verifiedformcontent {
-    display: none;
-}*/
 
 .verifiedformcontent {
-    width: fit-content;
-    background-color: red;
+    display: none;
+    background-color: rgba(255, 255, 255, 0.85);
+    border-radius:15px;
+    padding: 25px;
+    float:right;
+    margin: 10vh 30vh 10vh 10vh;
+    width: 500px;
+    height: 700px;
 }
+
 
 form {
     background-color: rgba(255, 255, 255, 0.85);
     border-radius:15px;
     padding: 25px;
+    width: 500px;
+    height: 700px;
     float:right;
     margin: 10vh 30vh 10vh 10vh;
 }
@@ -72,6 +74,9 @@ form textarea{
     padding: 10px;
 }
 
+form #submitbutton {
+    display: none;
+}
 
 .details {
     margin: 10px 10px 10px 10px;

@@ -31,7 +31,7 @@
     </nav>
     
     <div class="formcontent" id="formcontent">
-        <form name="contactusform">
+        <form name="contactusform" action="mailto:contact.us@mindhunter.com" method="GET" enctype="text/plain">
             <h1 id="formtitle">Contact Us</h1>
             <fieldset id="formfeild">
                 <div class="details">
@@ -44,11 +44,11 @@
                     <input type="tel" name="tel" id="tel"><br>
                     <label for="subject">Subject:</label><br>
                     <select name="subject" id="subject">
-                        <option value="delivery">Delivery</option>
-                        <option value="payment">Payment</option>
-                        <option value="requestbook">Requesting a non-listed book</option>
-                        <option value="cancelledorder">Cancelled Order</option>
-                        <option value="other">Other</option>
+                        <option value="Delivery">Delivery</option>
+                        <option value="Payment">Payment</option>
+                        <option value="Request Book">Requesting a non-listed book</option>
+                        <option value="Cancelled Order">Cancelled Order</option>
+                        <option value="Other">Other</option>
                     </select><br>
                     <Label for="query" id="querylabel">How can we help? </Label><br>
                     <textarea cols="40" rows="10" id="query" placeholder="Enter your query here."></textarea>
@@ -56,21 +56,24 @@
             </fieldset>
             <div class="buttons">
                 <fieldset id="buttonfeild">
-                    <input type="button" onclick="validateForm(); showEnteredInfo();" name="viewquery" value="View Query">
-                    <input type="reset" name="resetbutton" value="Reset">
+                    <input type="button" onclick="validateForm();" name="viewquery" value="View Query">
+                    <input type="reset" name="resetbutton" id="resetbutton" value="Reset">
+                    <input type="submit" name="submitbutton" id="submitbutton" value="Submit">
                 </fieldset>
             </div>
         </form>
     </div>
 
     <div class="verifiedformcontent" id="verifiedformcontent">
-        <h4>Name:</h4><a id="displayname"></a>
-        <h4>Email:</h4><a id="displayemail"></a>
-        <h4>Contact Number:</h4><a id="displaycontact"></a>
-        <h4>Subject:</h4><a id="displaysubject"></a>
-        <h4>Query:</h4><a id="displayquery"></a>
-        <input type="button" name="editbutton" value="Edit">
-        <input type="button" name="sendbutton" value="Send">
+        <h3>Your Query Details</h3><br>
+        <h4>Name:</h4><a id="displayname"></a><br>
+        <h4>Email:</h4><a id="displayemail"></a><br>
+        <h4>Contact Number:</h4><a id="displaycontact"></a><br>
+        <h4>Subject:</h4><a id="displaysubject"></a><br>
+        <h4>Query:</h4><a id="displayquery"></a><br>
+        <input type="button" name="editbutton" value="Edit" onclick="editQuery();"">
+        <br>
+        <input type="submit" name="sendbutton" value="Send" onclick="hideQuery(); document.getElementById('submitbutton').click(); document.getElementById('resetbutton').click();">
         
     </div>
 

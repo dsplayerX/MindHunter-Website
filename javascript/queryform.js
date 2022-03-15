@@ -4,7 +4,7 @@ function validateForm() {
     let tel=document.getElementById("tel").value;
     let querytext=document.getElementById("query").value;
     let atposition=email.indexOf("@");  
-    let dotposition=email.lastIndexOf(".");  
+    let dotposition=email.lastIndexOf(".");
 
     if ( name==null || name=="") {
         alert("Name field cannot be empty!");
@@ -32,6 +32,7 @@ function validateForm() {
         return false;
     } else {
         displayQuery();
+        showEnteredInfo();
     }
 }
 
@@ -40,7 +41,20 @@ function displayQuery() {
     document.getElementById("verifiedformcontent").style.display="block";
 }
 
+function hideQuery() {
+    document.getElementById("formcontent").style.display="block";
+    document.getElementById("verifiedformcontent").style.display="none";
+}
+
+function editQuery() {
+    document.getElementById("formcontent").style.display="block";
+    document.getElementById("verifiedformcontent").style.display="none";
+}
+
 function showEnteredInfo() {
     document.getElementById("displayname").innerHTML=document.getElementById("name").value;
-    
+    document.getElementById("displayemail").innerHTML=document.getElementById("email").value;
+    document.getElementById("displaycontact").innerHTML=document.getElementById("tel").value;
+    document.getElementById("displaysubject").innerHTML=document.getElementById("subject").value;
+    document.getElementById("displayquery").innerHTML=document.getElementById("query").value; 
 }
