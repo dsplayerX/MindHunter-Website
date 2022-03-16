@@ -3,6 +3,7 @@ function validateForm() {
     let email=document.getElementById("email").value;
     let tel=document.getElementById("tel").value;
     let querytext=document.getElementById("query").value;
+    let subject=document.getElementById("subject").value;
     let atposition=email.indexOf("@");  
     let dotposition=email.lastIndexOf(".");
 
@@ -24,6 +25,9 @@ function validateForm() {
     } else if ((!/^[0-9]+$/.test(tel)) || (tel.length < 9) || (tel.length > 10)) { // first condition taken from https://stackoverflow.com/questions/10713749/javascript-validation-numbers-only
         alert("Enter a valid phone number!")
         return false; 
+    } else if ( subject==null ||subject=="") {
+        alert("Subject field cannot be empty!");
+        return false;
     } else if ( querytext==null || querytext=="") {
         alert("Query discription cannot be empty!");
         return false;

@@ -10,7 +10,6 @@
     <link rel="stylesheet" href="style/navbarstyle.css">
     <link rel="stylesheet" href="style/queryformstyle.css">
     <script type="text/javascript" src="javascript/queryform.js"></script>
-
 </head>
 
 <body>
@@ -37,13 +36,14 @@
                 <div class="details">
                     <!--legend>Details</legend-->
                     <label for="name">Name:</label><br>
-                    <input type="text" name="name" id="name"><br>
+                    <input type="text" name="name" id="name" placeholder="Your first name and last name."><br>
                     <label for="email">Email:</label><br>
                     <input type="email" name="email" id="email"><br>
                     <label for="tel">Contact Number:</label><br>
                     <input type="tel" name="tel" id="tel"><br>
                     <label for="subject">Subject:</label><br>
                     <select name="subject" id="subject">
+                        <option value="" disabled selected hidden>Choose the subject of your query.</option>
                         <option value="Delivery">Delivery</option>
                         <option value="Payment">Payment</option>
                         <option value="Request Book">Requesting a non-listed book</option>
@@ -81,14 +81,14 @@
     <div class="leftinfo">
         <div class="quote">
             <p id="lequote"><em>"A book is a gift you can open again and again"</em></p>
-            <p id="lequotedfrom">Garrison Keillor</p>
+            <p id="lequotedfrom">- Garrison Keillor</p>
         </div>
         <div class="contactinfo">
             <div class="infobox">
                 <div class="icon"><img src="images/map-logo.png" alt="Map Logo"></div>
                 <div class="text">
                     <h3>Address</h3>
-                    <p>221B, Baker Street, London.</p>
+                    <p>221b, Baker Street, London.</p>
                     <br>
                 </div>
             </div>
@@ -115,6 +115,8 @@
             <a href="additional-content/faqs.html">Click Here</a>
         </div>
     </div>
-    
+<div class="footer">
+    <a href="/editors-pages/editor-dumindu.html"><img src="images/pointer.png" alt="pointer-hand">Editor - Dumindu</a>
+</div>    
 </body>
 </html>
