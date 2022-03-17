@@ -22,13 +22,13 @@ body {
     height: 750px;
 }
 .verifiedformcontent {
-    background-color: rgba(255, 255, 255, 0.85);
+    background-color: rgba(245, 245, 245, 0.85);
     border-radius:15px;
     padding: 25px;
 }
 
 form {
-    background-color: rgba(255, 255, 255, 0.85);
+    background-color: rgba(245, 245, 245, 0.85);
     border-radius:15px;
     padding: 25px;
     width: 500px;
@@ -87,7 +87,7 @@ form #viewquerybutton {
     padding: 10px 15px;
     border-radius:10px;
     background-color:rgb(156, 68, 9);
-    color: white;
+    color: whitesmoke;
     margin-left: 165px;
     margin-top: 20px;
     border-style: none;
@@ -98,7 +98,7 @@ form #resetbutton{
     padding: 8px 12px;
     border-radius:10px;
     background-color:rgb(98, 98, 98);
-    color: white;
+    color: whitesmoke;
     margin-left: 90px;
     margin-top: 20px;
     border-style: none;
@@ -128,7 +128,7 @@ form #viewquerybutton:hover, form #resetbutton:hover {
     padding: 10px 16px;
     border-radius:10px;
     background-color:rgb(156, 68, 9);
-    color: white;
+    color: whitesmoke;
     border-style: none;
     margin-left: 175px;
     margin-top: 25px;
@@ -139,7 +139,7 @@ form #viewquerybutton:hover, form #resetbutton:hover {
     padding: 8px 12px;
     border-radius:10px;
     background-color:rgb(98, 98, 98);
-    color: white;
+    color: whitesmoke;
     border-style: none;
     margin-left: 90px;
     margin-top: 25px;
@@ -167,7 +167,7 @@ form #viewquerybutton:hover, form #resetbutton:hover {
     display: block;
     width: 300px;
     float:left;
-    background-color: rgba(255, 255, 255, 0.85);
+    background-color: rgba(245, 245, 245, 0.85);
     border-radius:15px;
     padding: 25px;
     margin: 10px 20px 20px 270px;
@@ -177,10 +177,10 @@ form #viewquerybutton:hover, form #resetbutton:hover {
     display: block;
     width: fit-content;
     float:left;
-    background-color: rgb(255, 255, 255, 0.85);
+    background-color: rgb(245, 245, 245, 0.85);
     border-radius:15px;
     padding: 25px;
-    margin: 10px 20px 20px 270px;
+    margin: 10px 20px 20px 275px;
 }
 
 .leftinfo .quote #lequote{
@@ -212,11 +212,11 @@ form #viewquerybutton:hover, form #resetbutton:hover {
 }
 
 .linktofaqs a:link {
-    color: rgb(255, 255, 255);
+    color: rgb(245, 245, 245);
 }
 
 .linktofaqs a:visited {
-    color: rgb(255, 255, 255);
+    color: rgb(245, 245, 245);
 }
 
 .linktofaqs a{
