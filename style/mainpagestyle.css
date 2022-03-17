@@ -6,7 +6,7 @@ body{
 
 .topcontent {
     background-image: url("/images/rusty-book.jpg");
-    height: 650px;
+    height: 645px;
     background-size: cover;
     background-position: middle;
     margin: 0;
@@ -36,7 +36,11 @@ body{
 }
 
 .mainquote p {
+    text-align: right;
     margin-top: 5px;
+    margin-bottom: 5px;
+    width: 250px;
+    margin-left: 915px;
 }
 
 .mainquote a {
@@ -65,6 +69,57 @@ body{
 .mainquote a:visited {
     color: rgb(156, 68, 9);
     text-decoration: none;
+}
+
+.top-selling-content{
+    padding: 20px 0px;
+    height: 440px;
+    width: 100%;
+    background-color: rgb(248, 162, 162);
+    background-image: url("/images/bookshelf-with-lights.jpg");
+    background-size: cover;
+    background-position: 80px;
+}
+
+.book-of-month{
+    display: block;
+    float:left;
+    margin-left: 400px;
+    background-color: rgb(4, 128, 128);
+    background-size: cover;
+    border-radius: 10px;
+    color: whitesmoke;
+    height: 400px;
+    width: 300px;
+    padding: 15px;
+    text-align: center;
+}
+
+.author-of-month{
+    display: block;
+    float:right;
+    margin-right: 400px;
+    background-image: url("/images/george-rr-martin.jpg");
+    background-size: cover;
+    border-radius: 10px;
+    color: whitesmoke;
+    height: 400px;
+    width: 300px;
+    padding: 15px;
+    text-align: center;
+}
+
+.author-of-month h1 {
+    margin-top: 120px;
+}
+
+.book-of-month h1 {
+    margin-top: 120px;
+}
+.bottom-content {
+    float: none;
+    
+    background-color: red;
 }
 
 .footer {

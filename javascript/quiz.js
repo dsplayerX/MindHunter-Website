@@ -1,4 +1,4 @@
-/*Quiz javascript - Diman*/
+//Quiz javascript - Diman//
 
 function on(){
 	c = 60;

@@ -1,3 +1,5 @@
+//Query Form JavaScript - Dumindu//
+
 function validateForm() {
     let name=document.getElementById("name").value;
     let email=document.getElementById("email").value;
