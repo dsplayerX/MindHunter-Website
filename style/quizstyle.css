@@ -1,4 +1,7 @@
 /*Quiz javaCSS - Diman*/
+body {
+    background-color: bisque;
+}
 
 .quizform{
     background-color: white;

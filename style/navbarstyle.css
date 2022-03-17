@@ -2,15 +2,8 @@
 * {
     padding: 0;
     margin: 0;
-    text-decoration: none;
-    list-style: none;
     box-sizing: border-box;
 }
-
-body {
-    background-color: rgb(197, 197, 197);
-}
-
 
 nav {
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -33,17 +26,21 @@ nav img:hover{
 }
 
 nav ul {
+    
+    list-style: none;
     float: right;
     margin-right: 20px;
 }
 
 nav ul li {
+    
     display: inline-block;
     line-height: 80px;
     margin: 0 5px;
 }
 
 nav ul li a {
+    text-decoration: none;
     color: white;
     font-size: 17px;
     padding: 7px 13px;
