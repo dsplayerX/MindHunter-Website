@@ -5,7 +5,7 @@ body{
 }
 
 .topcontent {
-    background-image: url("/images/rusty-book.jpg");
+    background-image: url("../images/rusty-book.jpg");
     height: 645px;
     background-size: cover;
     background-position: middle;
@@ -81,7 +81,7 @@ body{
     padding: 20px 0px;
     height: 440px;
     width: 100%;
-    background-image: url("/images/bookshelf-with-lights.jpg");
+    background-image: url("../images/bookshelf-with-lights.jpg");
     background-size: cover;
     background-position: 80px;
 }
@@ -104,7 +104,7 @@ body{
     display: block;
     float:left;
     margin-left: 80px;
-    background-image: url("/images/george-rr-martin.jpg");
+    background-image: url("../images/george-rr-martin.jpg");
     background-size: cover;
     border-radius: 10px;
     color: whitesmoke;
