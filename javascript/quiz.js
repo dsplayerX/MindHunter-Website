@@ -43,11 +43,11 @@ function mark(){
 
 	if(a-b<8){
 		out.textContent=`Your result is ${a-b}. Work Hard. You only got correct ${r} out of 10 Questions.`
-		document.body.style.backgroundColor = "#ff0000"; 
+		document.getElementById("quizform").style.backgroundColor = "#ff0000"; 
 	}
 	else{
 		out.textContent=`Your result is ${a-b}. Keep it up!. You only got correct ${r} out of 10 Questions.`
-		document.body.style.backgroundColor = "#00ff00";
+		document.getElementById("quizform").style.backgroundColor = "#00ff00";
 	}
 }
 

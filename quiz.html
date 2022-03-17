@@ -24,13 +24,16 @@
         </ul>
     </nav>
 
-    <div>
-        <h3>Time left: <text id="time001">60</text></h3><br/>
+    <div class="top-quiz">
+        <h1>QUIZ</h1>
     </div>
-    <br>
-    <div id="quizform">
-        <!--ADD A PROPER TITLE AND A PARAGRAPH ABOUT THE QUIZ -dumindu -->
-        <h1>QUIZ</h1><br>
+
+    <div class="quiz-time">
+        <h3>Time left: <text id="time001">60</text></h3>
+    </div>
+    
+    <div class="quizform" id="quizform">
+        
         <form id="qz" name="qz">
             <div onclick="on()"  id="count">
                 <p>1.What is a library collection ?</p><br>
@@ -114,14 +117,12 @@
 
             <input type="button" name="" value="Submit" id="btton" onclick="mark()">
         </form>
-        <br>
-
-        <div>
-            <h4>Quiz Result: </h4>
-            <h4 id="out"></h4>
-            <h4>Used Time: </h4>
-            <h4 id="rtime"></h4>
-        </div>
+    </div>
+    <div class="bottom-quiz">
+        <h4>Quiz Result: </h4>
+        <h4 id="out"></h4>
+        <h4>Used Time: </h4>
+        <h4 id="rtime"></h4>
     </div>
 </body>
 </html>
