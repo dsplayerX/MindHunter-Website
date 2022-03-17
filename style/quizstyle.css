@@ -1,9 +1,15 @@
 /*Quiz javaCSS - Diman*/
 
-#quizform{
+.quizform{
+    background-color: white;
+    border-radius: 10px;
     font-size: 20px;
     font-weight: bolder;
-    margin-left: 2rem;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 100px;
+    margin-top: 100px;
+    padding: 40px;
 }
 
 h1{text-align: center;
@@ -14,8 +20,41 @@ font-weight: bold;
 font-size: x-large;}
 
 #btton{
-    background-color: black;
+    border-style: none;
+    background-color: rgb(156, 68, 9);
+    border-radius: 5px;
     color: white;
-    font-size: 18px;
-    padding: 6px;
+    font-size: 16px;
+    padding: 10px;
+    margin-left: 600px;
+}
+
+#btton:hover{
+    background-color: rgb(209, 118, 57);
+    transition: 0.5s;
+}
+
+.quiz-time {
+    width: fit-content;
+    background-color: aqua;
+    border-radius: 10px;
+    padding: 10px;
+    display: block;
+    margin-right: 120px;
+    margin-top: 40px;
+    float: right;
+}
+
+.top-quiz{
+    margin-top: 40px;
+}
+
+.bottom-quiz{
+    width: 300px;
+    height: 200px;
+    background-color: bisque;
+    border-radius: 10px;
+    padding: 10px;
+    margin-left: 100px;
+    font-size: 20px;
 }
