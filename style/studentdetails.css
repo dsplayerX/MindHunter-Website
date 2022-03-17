@@ -45,5 +45,7 @@
 }
 
 .bb{
-  background-image: url("/references/b3.jpg");
+  background-color: rgb(0, 0, 0);
 }
+
+h2{color: white;}
