@@ -106,6 +106,7 @@ form #resetbutton{
 
 form #viewquerybutton:hover, form #resetbutton:hover {
     background-color: rgb(209, 118, 57);
+    transition: 0.5s;
 }
 
 .verifiedformcontent h3 {
@@ -147,6 +148,7 @@ form #viewquerybutton:hover, form #resetbutton:hover {
 
 .verifiedformcontent #editbutton:hover, .verifiedformcontent #sendbutton:hover {
     background-color: rgb(209, 118, 57);
+    transition: 0.5s;
 }
 
 .details {
