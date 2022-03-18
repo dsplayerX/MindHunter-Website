@@ -46,9 +46,21 @@
 }
 
 .bb{
-  background-image: url("../images/book-circle.jpg");
+  background-image: url("../images/bb2.jpg");
   background-size: cover;
 
 }
 
 h2{color: white;}
+
+.button{
+  width: fit-content;
+  border-style: none;
+  background-color: rgb(255, 255, 255);
+  border-radius: 5px;
+  color: white;
+  font-size: 16px;
+  padding: 10px;
+  margin-left: 716px;
+  margin-top: 50px;
+}
