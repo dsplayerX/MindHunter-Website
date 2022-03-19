@@ -2,6 +2,7 @@
 
 function on(){
 	c = 60;
+	c1 = 0;
 }
 
 function mark(){
@@ -55,18 +56,38 @@ function timer001(){
 	c = c -1;
 	if (c<60){
 		time001.innerHTML = c;
-		document.getElementById('rtime').innerHTML= c;
+		document.getElementById('time001').innerHTML= c;
 	}
 
 	if(c<1){
 		window.clearInterval(update);
-		document.getElementById('rtime').innerHTML= c;
+		document.getElementById('time001').innerHTML= c;
 	}
 
 	if(c===0){
 		document.getElementById('count').innerHTML='Time is Up';
 	}
-
 }
 
-update = setInterval("timer001()",1000);
+function stopcounter(){
+	window.clearInterval(update);
+}
+
+var update = window.setInterval("timer001()",1000);
+
+function timer002(){
+	c1 = c1 +1;
+	if(c1<60){
+		time002.innerHTML = c1;
+		document.getElementById('time002').innerHTML=c1;
+	}
+}
+
+function stopcounter2(){
+	window.clearInterval(update2);
+}
+
+var update2 = window.setInterval("timer002()",1000);
+
+
+
