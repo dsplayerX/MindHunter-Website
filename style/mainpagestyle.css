@@ -134,7 +134,7 @@ body{
 }
 
 .bottom-content {
-    height:500px;
+    height:700px;
     float: none;
     color: whitesmoke;
     background-color: rgb(133, 90, 90);
@@ -167,32 +167,64 @@ body{
     margin-top: 5px;
 }
 
+.contentbox-container {
+    margin: 10px 10px 10px 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+    height: fit-content;
+    width: fit-content;
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+}
+
 .contentboxes{
+    background-image: url(../images/yellow-bulb.jpg);
+    background-size: cover;
+    background-position: ;
     float: right;
     margin-right: 40px;
     margin-top: 40px;
-    width: 700px;
-    background-color: aquamarine;
+    width: 710px;
+    height: 550px;
     padding: 10px;
     border-radius: 10px;
 }
 
 .vision-box {
-    background-color: red;
+    width: 500px;
+    background-color: rgb(133, 90, 90);
     padding: 20px;
     border-radius: 10px;
     margin-bottom: 20px;
+    
 }
 
 .mission-box{
-    background-color: blue;
+    width: 500px;
+    background-color: rgb(133, 90, 90);
     padding: 20px;
     border-radius: 10px;
     margin-bottom: 20px;
+    
 }
 
-#backtotop {
-    float: none;
+.contentboxes img {
+    width: 80px;
+    height: auto;
+    margin-left: 210px;
+    margin-bottom: 10px;
+}
+
+.contentboxes h1 {
+    text-align: center;
+}
+
+
+.totop #backtotop {
+    position: absolute;
+    margin-left: -700px;
+    margin-top: 460px;
     text-decoration: none;
     color: whitesmoke;
     background-color: rgb(156, 68, 9);
