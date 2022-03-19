@@ -81,6 +81,15 @@ function timer002(){
 		time002.innerHTML = c1;
 		document.getElementById('time002').innerHTML=c1;
 	}
+
+	if(c1<1){
+		window.clearInterval(update);
+		document.getElementById('time002').innerHTML= c;
+	}
+
+	if(c1===61){
+		document.getElementById('time002').innerHTML='Time is Up';
+	}
 }
 
 function stopcounter2(){
@@ -88,6 +97,14 @@ function stopcounter2(){
 }
 
 var update2 = window.setInterval("timer002()",1000);
+
+function vanish(){
+  document.getElementById('btton').style.display ='inline';
+  setTimeout(function(){
+  document.getElementById('btton').style.display ='none';
+},60000); 
+
+}
 
 
 
