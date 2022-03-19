@@ -137,23 +137,28 @@ body{
     height:700px;
     float: none;
     color: whitesmoke;
-    background-color: rgb(133, 90, 90);
+    background-image: url("../images/bottom-books.jpg");
+    background-size: cover;
 }
 
 .info-content {
+    background-color: rgb(220, 148, 148);
     padding: 20px;
     border-radius: 10px;
     margin-top: 40px;
     margin-left: 40px;
     float: left;
-    background-color: whitesmoke;
     width: 665px;
-    height: 400px;
+    height: 540px;
 }
 
 .info-content h1 {
     color: rgb(0, 144, 124);
     text-shadow: 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+.info-content p {
+    font-size: 20px;
 }
 
 .whybuy-content ul {
@@ -167,33 +172,32 @@ body{
     margin-top: 5px;
 }
 
+
+.contentboxes{
+    background-color: rgba(0, 0, 0, 0.5);
+    float: right;
+    margin-right: 40px;
+    margin-top: 40px;
+    width: 710px;
+    height: 590px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
 .contentbox-container {
     margin: 10px 10px 10px 10px;
-    background-color: rgba(0, 0, 0, 0.7);
-    height: fit-content;
+    height: 550px;
     width: fit-content;
-    padding: 20px;
+    padding: 10px 60px;
     margin-left: auto;
     margin-right: auto;
     border-radius: 10px;
 }
 
-.contentboxes{
-    background-image: url(../images/yellow-bulb.jpg);
-    background-size: cover;
-    background-position: ;
-    float: right;
-    margin-right: 40px;
-    margin-top: 40px;
-    width: 710px;
-    height: 550px;
-    padding: 10px;
-    border-radius: 10px;
-}
 
 .vision-box {
-    width: 500px;
-    background-color: rgb(133, 90, 90);
+    width: 480px;
+    background-color: rgba(255, 159, 34, 0.7);
     padding: 20px;
     border-radius: 10px;
     margin-bottom: 20px;
@@ -201,18 +205,24 @@ body{
 }
 
 .mission-box{
-    width: 500px;
-    background-color: rgb(133, 90, 90);
+    width: 480px;
+    background-color: rgba(230, 57, 80, 0.7);
     padding: 20px;
     border-radius: 10px;
     margin-bottom: 20px;
     
 }
 
+.mission-box p, .vision-box p {
+    font-size: 18px;
+    text-align: center;
+}
+
 .contentboxes img {
     width: 80px;
     height: auto;
-    margin-left: 210px;
+    margin-top: 15px;
+    margin-left: 200px;
     margin-bottom: 10px;
 }
 
@@ -220,6 +230,19 @@ body{
     text-align: center;
 }
 
+.contentbox-container a {
+    margin-left: 195px;
+    margin-top: 20px;
+    text-decoration: none;
+    color: whitesmoke;
+    background-color: rgb(156, 68, 9);
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.contentbox-container a:hover {
+    background-color: rgb(209, 118, 57);
+}
 
 .totop #backtotop {
     position: absolute;
