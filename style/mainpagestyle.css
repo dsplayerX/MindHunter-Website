@@ -18,7 +18,8 @@ body{
 }
 
 .highlighttext {
-    color: rgb(209, 118, 57);
+    color: rgb(0, 187, 178);
+    text-shadow: 1.5px 1.5px #e58bff;
     font-size: 120px;
 }
 
@@ -26,7 +27,7 @@ body{
     text-align: center;
     color:whitesmoke;
     font-size: 80px;
-    text-shadow: 2px 2px rgba(156, 68, 9, 0.5);
+    text-shadow: 2px 2px #363636fa;
 }
 
 .mainquote h3{
@@ -142,10 +143,8 @@ body{
 }
 
 .info-content {
-    background-image: url("../images/open-books.jpg");
-    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.5);
     color: whitesmoke;
-    background-color: rgb(255, 255, 255);
     padding: 20px 60px;
     border-radius: 10px;
     margin-top: 40px;
@@ -159,8 +158,8 @@ body{
     margin-top: 20px;
     margin-bottom: 10px;
     text-align: center;
-    color: rgb(0, 144, 124);
-    text-shadow: 1.5px 1.5px rgba(255, 255, 255, 0.714);
+    color: rgb(0, 187, 178);
+    text-shadow: 1.5px 1.5px #e58bff;
 }
 
 .info-content p {
