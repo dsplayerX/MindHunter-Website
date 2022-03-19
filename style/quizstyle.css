@@ -34,6 +34,19 @@ font-size: x-large;}
     margin-left: 600px;
 }
 
+#btton1{
+    width: fit-content;
+    border-style: none;
+    background-color: rgb(156, 68, 9);
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    padding: 10px;
+    margin-left: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
 #btton:hover{
     background-color: rgb(209, 118, 57);
     transition: 0.5s;
