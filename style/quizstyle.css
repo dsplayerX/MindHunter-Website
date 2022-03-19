@@ -35,16 +35,16 @@ font-size: x-large;}
 }
 
 #btton1{
-    width: fit-content;
+    width: 200px;
     border-style: none;
     background-color: rgb(156, 68, 9);
     border-radius: 5px;
     color: white;
     font-size: 16px;
     padding: 10px;
-    margin-left: 10px;
-    margin-top: 5px;
-    margin-bottom: 10px;
+    margin-left: 675px;
+    margin-top: 100px;
+    margin-bottom: 50px;
 }
 
 #btton:hover{

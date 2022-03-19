@@ -103,8 +103,11 @@ function vanish(){
   setTimeout(function(){
   document.getElementById('btton').style.display ='none';
 },60000); 
-
 }
+
+function openForm() {
+	document.getElementById('quizform').style.display = "block";
+ }
 
 
 
