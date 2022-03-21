@@ -226,7 +226,7 @@ body{
 }
 
 .info-content a {
-    margin-left: 220px;
+    margin-left: 195px;
     text-decoration: none;
     color: whitesmoke;
     background-color: rgb(156, 68, 9);
@@ -295,21 +295,6 @@ body{
 
 .contentboxes h1 {
     text-align: center;
-}
-
-.contentbox-container a {
-    margin-left: 195px;
-    margin-top: 20px;
-    text-decoration: none;
-    color: whitesmoke;
-    background-color: rgb(156, 68, 9);
-    padding: 5px 10px;
-    border-radius: 5px;
-}
-
-.contentbox-container a:hover {
-    background-color: rgb(209, 118, 57);
-    transition: 0.5s;
 }
 
 .totop #backtotop {
