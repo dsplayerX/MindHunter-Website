@@ -10,7 +10,7 @@ function changeImage(){
         i = 0;
     }
 
-    setTimeout("changeImage()", 3500);
+    setTimeout("changeImage()", 3000);
 }
 
 window.onload = changeImage;
