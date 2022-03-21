@@ -80,18 +80,35 @@ body{
 
 .top-selling-content{
     padding: 40px 0px;
-    height: 480px;
+    height: 600px;
     width: 100%;
-    background-image: url("../images/bookshelf-with-lights.jpg");
+    background-image: url("../images/blue-books.jpg");
     background-size: cover;
-    background-position: 80px;
+    background-position: top;
+}
+
+.top-selling-content #trendstitle {
+    margin-top: 5px;
+    margin-bottom: 45px;
+    color: whitesmoke;
+    text-align: center;
+    font-size: 48px;text-shadow: 4px 4px rgba(0, 0, 0, 0.85);
+}
+
+.top-selling-content #quotestitle {
+ 
+    background-color: red;
+    width: fit-content;
+    color: whitesmoke;
+    text-align: left;
+    font-size: 42px;
 }
 
 .book-of-month{
     display: block;
     float:left;
     margin-left: 40px;
-    background-color: rgb(4, 128, 128);
+    background-image: url("../images/dan-brown-inferno-cover.jpg");
     background-size: cover;
     border-radius: 10px;
     color: whitesmoke;
@@ -116,11 +133,39 @@ body{
 }
 
 .author-of-month h1 {
+    text-shadow: 1px 1px black;
     margin-top: 120px;
+    margin-bottom: 5px;
 }
 
 .book-of-month h1 {
-    margin-top: 150px;
+    text-shadow: 1px 1px black;
+    margin-top: 80px;
+    margin-bottom: 5px;
+}
+
+.author-of-month p{
+    text-shadow: 1px 1px black;
+    margin-bottom: 10px;
+}
+
+.book-of-month p {
+    text-shadow: 1px 1px black;
+    margin-bottom: 75px;
+}
+
+.author-of-month a, .book-of-month a {
+    font-size: 15px;
+    text-decoration: none;
+    color: whitesmoke;
+    background-color: #1b3f57;
+    padding: 1px 5px;
+    border-radius: 5px;
+}
+
+.author-of-month a:hover, .book-of-month a:hover {
+    background-color: #4fa0d5;
+    transition: 0.5s;
 }
 
 .slideshow {
@@ -135,7 +180,7 @@ body{
 }
 
 .bottom-content {
-    height:700px;
+    height:720px;
     float: none;
     color: whitesmoke;
     background-image: url("../images/bottom-books.jpg");
@@ -293,7 +338,7 @@ body{
     color: white;
     font-size: 16px;
     right: 0;
-    bottom: -1190px;
+    bottom: -1330px;
 }
 
 .footer a:visited, .footer a:link {
