@@ -1,4 +1,8 @@
 /*Quiz javaCSS - Diman*/
+* {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
 body {
     background-color: bisque;
     background-image: url(../images/bb1.jpg);

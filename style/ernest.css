@@ -1,6 +1,27 @@
-.image{
+* {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body {
+    background-image: url("../images/pen-writing.jpg");
+    background-size: cover;
+}
+
+.page-content {
+    background-color: rgba(0, 0, 0, 0.75);
+    width: 900px;
+    height: fit-content;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.page-content #ernest-image{
     text-align: center;
-    width: 15%;
+    width: 35%;
     margin: auto;
     display: block;
     border-radius: 5px;
@@ -24,9 +45,23 @@ h6,hr{
     border-style: none;
     border-radius: 5px;
     margin-top: 30px;
-    margin-bottom: 50px;
     text-align: center;
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-left: auto;
+    margin-right: auto;
     padding: 35px;
+    
+}
+
+.totop #backtotop {
+    margin-left: 370px;
+    text-decoration: none;
+    color: whitesmoke;
+    background-color: rgb(156, 68, 9);
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+#backtotop:hover {
+    background-color: rgb(209, 118, 57);
+    transition: 0.5s;
 }
