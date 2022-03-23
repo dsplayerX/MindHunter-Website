@@ -3,11 +3,6 @@
     color: whitesmoke;
 }
 
-body {
-    background-image: url("../images/editor-background.jpg");
-    background-size: cover;
-}
-
 h1 {
     font-size: 42px;
     text-shadow: 1px 1px black;

@@ -31,7 +31,7 @@ function validateForm() {
         alert("Subject field cannot be empty!");
         return false;
     } else if ( querytext==null || querytext=="") {
-        alert("Query discription cannot be empty!");
+        alert("Query description cannot be empty!");
         return false;
     } else if ( querytext.length < 25) {
         alert("Please explain your query in more details.");
@@ -48,11 +48,6 @@ function displayQuery() {
 }
 
 function hideQuery() {
-    document.getElementById("formcontent").style.display="block";
-    document.getElementById("verifiedouter").style.display="none";
-}
-
-function editQuery() {
     document.getElementById("formcontent").style.display="block";
     document.getElementById("verifiedouter").style.display="none";
 }
