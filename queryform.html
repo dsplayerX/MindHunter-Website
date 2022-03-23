@@ -1,119 +1,118 @@
 <!--Query Form - Dumindu-->
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Mindhunter Bookstore &middot; Contact Us</title>
-    <link rel="shortcut icon" href="images/title-logo.png" type="image/x-icon">
-    <link rel="stylesheet" href="style/navbarstyle.css">
-    <link rel="stylesheet" href="style/queryformstyle.css">
-    <script src="javascript/queryform.js"></script>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <title>Mindhunter Bookstore &middot; Contact Us</title>
+        <link rel="shortcut icon" href="images/title-logo.png" type="image/x-icon">
+        <link rel="stylesheet" href="style/navbarstyle.css">
+        <link rel="stylesheet" href="style/queryformstyle.css">
+        <script src="javascript/queryform.js"></script>
+    </head>
 
-<body>
-    <!--Navigation Bar - Dumindu-->
-    <nav>
-        <a href="mainpage.html"><img src="images/mindhunter-white.png" alt="Mindhunter Bookstore Logo"></a>
-        <ul>
-            <li><a href="mainpage.html">Home</a></li>
-            <li><a href="thumbnailimages.html">Explore</a></li>
-            <li><a href="store.html">Store</a></li>
-            <li><a href="quiz.html">Try a Quiz!</a></li>
-            
-            <li><a class="active" href="queryform.html">Contact Us</a></li>
-            <li><a href="sitemap.html">Sitemap</a></li>
-            <li><a href="studentdetails.html">Student Details</a></li>
-        </ul>
-    </nav>
-    
-    <div class="formcontent" id="formcontent">
-        <form name="contactusform" action="mailto:contact.us@mindhunter.com" method="GET" enctype="text/plain">
-            <h1 id="formtitle">Contact Us</h1>
-            <fieldset id="formfeild">
-                <div class="details">
-                    <!--legend>Details</legend-->
-                    <label for="name">Name:</label><br>
-                    <input type="text" name="name" id="name" placeholder="Your first name and last name"><br>
-                    <label for="email">Email:</label><br>
-                    <input type="email" name="email" id="email" placeholder="Example@domain.com"><br>
-                    <label for="tel">Contact Number:</label><br>
-                    <input type="tel" name="tel" id="tel" placeholder="Enter a 9 or 10 digit phone number"><br>
-                    <label for="subject">Subject:</label><br>
-                    <select name="subject" id="subject">
-                        <option value="" disabled selected hidden>Choose the subject of your query</option>
-                        <option value="Delivery">Delivery</option>
-                        <option value="Payment">Payment</option>
-                        <option value="Request Book">Requesting a non-listed book</option>
-                        <option value="Cancelled Order">Cancelled Order</option>
-                        <option value="Other">Other</option>
-                    </select><br>
-                    <Label for="query" id="querylabel">How can we help? </Label><br>
-                    <textarea cols="40" rows="10" id="query" name="body" placeholder="Enter your query in details"></textarea>
-                </div>
-            </fieldset>
-            <div class="buttons">
-                <fieldset id="buttonfeild">
-                    <input type="button" onclick="validateForm(); window.scrollTo(0, -100);" name="viewquery" id="viewquerybutton" value="View Query"> 
-                    <!--Scroll to top takeb from https://www.codegrepper.com/code-examples/css/scroll+on+click+javascript-->
-                    <input type="reset" name="resetbutton" id="resetbutton" value="Reset">
-                    <input type="submit" name="submitbutton" id="submitbutton" value="Submit">
+    <body>
+        <!--Navigation Bar - Dumindu-->
+        <nav>
+            <a href="mainpage.html"><img src="images/mindhunter-white.png" alt="Mindhunter Bookstore Logo"></a>
+            <ul>
+                <li><a href="mainpage.html">Home</a></li>
+                <li><a href="thumbnailimages.html">Explore</a></li>
+                <li><a href="store.html">Store</a></li>
+                <li><a href="quiz.html">Try a Quiz!</a></li>
+                
+                <li><a class="active" href="queryform.html">Contact Us</a></li>
+                <li><a href="sitemap.html">Sitemap</a></li>
+                <li><a href="studentdetails.html">Student Details</a></li>
+            </ul>
+        </nav>
+        
+        <div class="formcontent" id="formcontent">
+            <form name="contactusform" action="mailto:contact.us@mindhunter.com" method="GET" enctype="text/plain">
+                <h1 id="formtitle">Contact Us</h1>
+                <fieldset id="formfeild">
+                    <div class="details">
+                        <label for="name">Name:</label><br>
+                        <input type="text" name="name" id="name" placeholder="Your first name and last name"><br>
+                        <label for="email">Email:</label><br>
+                        <input type="email" name="email" id="email" placeholder="Example@domain.com"><br>
+                        <label for="tel">Contact Number:</label><br>
+                        <input type="tel" name="tel" id="tel" placeholder="Enter a 9 or 10 digit phone number"><br>
+                        <label for="subject">Subject:</label><br>
+                        <select name="subject" id="subject">
+                            <option value="" disabled selected hidden>Choose the subject of your query</option>
+                            <option value="Delivery">Delivery</option>
+                            <option value="Payment">Payment</option>
+                            <option value="Request Book">Requesting a non-listed book</option>
+                            <option value="Cancelled Order">Cancelled Order</option>
+                            <option value="Other">Other</option>
+                        </select><br>
+                        <Label for="query" id="querylabel">How can we help? </Label><br>
+                        <textarea cols="40" rows="10" id="query" name="body" placeholder="Enter your query in details"></textarea>
+                    </div>
                 </fieldset>
-            </div>
-        </form>
-    </div>
-    <div class="verifiedouter" id="verifiedouter">
-        <div class="verifiedformcontent" id="verifiedformcontent">
-            <h3>Your Query Details</h3><br>
-            <h4>Name:</h4><a id="displayname"></a><br>
-            <h4>Email:</h4><a id="displayemail"></a><br>
-            <h4>Contact Number:</h4><a id="displaycontact"></a><br>
-            <h4>Subject:</h4><a id="displaysubject"></a><br>
-            <h4>Query:</h4><a id="displayquery"></a><br>
-            <input type="submit" name="sendbutton" id="sendbutton" value="Send" onclick="hideQuery(); document.getElementById('submitbutton').click(); document.getElementById('resetbutton').click();">
-            <input type="button" name="editbutton" id="editbutton" value="Edit" onclick="hideQuery();">
+                <div class="buttons">
+                    <fieldset id="buttonfeild">
+                        <input type="button" onclick="validateForm(); window.scrollTo(0, -100);" name="viewquery" id="viewquerybutton" value="View Query"> 
+                        <!--Scroll to top takeb from https://www.codegrepper.com/code-examples/css/scroll+on+click+javascript-->
+                        <input type="reset" name="resetbutton" id="resetbutton" value="Reset">
+                        <input type="submit" name="submitbutton" id="submitbutton" value="Submit">
+                    </fieldset>
+                </div>
+            </form>
         </div>
-    </div>
-    
+        <div class="verifiedouter" id="verifiedouter">
+            <div class="verifiedformcontent" id="verifiedformcontent">
+                <h3>Your Query Details</h3><br>
+                <h4>Name:</h4><a id="displayname"></a><br>
+                <h4>Email:</h4><a id="displayemail"></a><br>
+                <h4>Contact Number:</h4><a id="displaycontact"></a><br>
+                <h4>Subject:</h4><a id="displaysubject"></a><br>
+                <h4>Query:</h4><a id="displayquery"></a><br>
+                <input type="submit" name="sendbutton" id="sendbutton" value="Send" onclick="hideQuery(); document.getElementById('submitbutton').click(); document.getElementById('resetbutton').click();">
+                <input type="button" name="editbutton" id="editbutton" value="Edit" onclick="hideQuery();">
+            </div>
+        </div>
+        
 
-    <div class="leftinfo">
-        <div class="quote">
-            <p id="lequote">"A book is a gift you can open again and again"</p>
-            <p id="lequotedfrom">- Garrison Keillor</p>
-        </div>
-        <div class="contactinfo">
-            <div class="infobox">
-                <div class="icon"><img src="images/map-logo.png" alt="Map Logo"></div>
-                <div class="text">
-                    <h3>Address</h3>
-                    <p>221b, Baker Street, London.</p>
-                    <br>
+        <div class="leftinfo">
+            <div class="quote">
+                <p id="lequote">"A book is a gift you can open again and again"</p>
+                <p id="lequotedfrom">- Garrison Keillor</p>
+            </div>
+            <div class="contactinfo">
+                <div class="infobox">
+                    <div class="icon"><img src="images/map-logo.png" alt="Map Logo"></div>
+                    <div class="text">
+                        <h3>Address</h3>
+                        <p>221b, Baker Street, London.</p>
+                        <br>
+                    </div>
+                </div>
+                <div class="infobox">
+                    <div class="icon"><img src="images/email-logo.png" alt="Email Logo"></div>
+                    <div class="text">
+                        <h3>Email</h3>
+                        <p>contact.us@mindhunter.com</p>
+                        <br>
+                    </div>
+                </div>
+                <div class="infobox">
+                    <div class="icon"><img src="images/phone-logo.png" alt="Phone Logo"></div>
+                    <div class="text">
+                        <h3>Phone</h3>
+                        <p>+1 112 224 448</p>
+                        <br>
+                    </div>
                 </div>
             </div>
-            <div class="infobox">
-                <div class="icon"><img src="images/email-logo.png" alt="Email Logo"></div>
-                <div class="text">
-                    <h3>Email</h3>
-                    <p>contact.us@mindhunter.com</p>
-                    <br>
-                </div>
-            </div>
-            <div class="infobox">
-                <div class="icon"><img src="images/phone-logo.png" alt="Phone Logo"></div>
-                <div class="text">
-                    <h3>Phone</h3>
-                    <p>+1 112 224 448</p>
-                    <br>
-                </div>
+            <div class="linktofaqs">
+                <h3>FAQs</h3>
+                <p>To see the frequently asked questions</p><br>
+                <a href="additional-content/faqs.html">Click Here</a>
             </div>
         </div>
-        <div class="linktofaqs">
-            <h3>FAQs</h3>
-            <p>To see the frequently asked questions</p><br>
-            <a href="additional-content/faqs.html">Click Here</a>
-        </div>
-    </div>
-<div class="footer">
-    <a href="editors-pages/editor-dumindu.html" target="_blank"><img src="images/pointer.png" alt="pointer-hand">Editor - Dumindu</a>
-</div>    
-</body>
+    <div class="footer">
+        <a href="editors-pages/editor-dumindu.html" target="_blank"><img src="images/pointer.png" alt="pointer-hand">Editor - Dumindu</a>
+    </div>    
+    </body>
 </html>
