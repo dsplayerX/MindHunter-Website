@@ -1,51 +1,262 @@
 <!--Buy Products - Nanduni-->
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Mindhunter Bookstore &middot; Store</title>
-    <link rel="shortcut icon" href="images/title-logo.png" type="image/x-icon">
-    <link rel="stylesheet" href="style/navbarstyle.css">
-    <link rel="stylesheet" href="style/storestyle.css">
-    
-</head>
-<body>
-    <!--Navigation Bar - Dumindu-->
-    <nav>
-        <a href="mainpage.html"><img src="images/mindhunter-white.png" alt="Mindhunter Bookstore Logo"></a>
-        <ul>
-            <li><a href="mainpage.html">Home</a></li>
-            <li><a href="thumbnailimages.html">Explore</a></li>
-            <li><a class="active" href="store.html">Store</a></li>
-            <li><a href="quiz.html">Try a Quiz!</a></li>          
-            <li><a href="queryform.html">Contact Us</a></li>
-            <li><a href="sitemap.html">Sitemap</a></li>
-            <li><a href="studentdetails.html">Student Details</a></li>
-        </ul>
-    </nav>
+    <head>
+        <meta charset="UTF-8">
+        <title>Mindhunter Bookstore &middot; Store</title>
+        <link rel="shortcut icon" href="images/title-logo.png" type="image/x-icon"/>
+        <link rel="stylesheet" href="style/navbarstyle.css"/>
+        <link rel="stylesheet" href="style/storestyle.css"/>
+        <script src="javascript/store.js" async></script>
+        
+    </head>
+    <body>
+        <header class="main-header">
+        <!--Navigation Bar - Dumindu-->
+            <nav>
+                <a href="mainpage.html"><img src="images/mindhunter-white.png" alt="Mindhunter Bookstore Logo"></a>
+                <ul>
+                    <li><a href="mainpage.html">Home</a></li>
+                    <li><a href="thumbnailimages.html">Explore</a></li>
+                    <li><a class="active" href="store.html">Store</a></li>
+                    <li><a href="quiz.html">Try a Quiz!</a></li>          
+                    <li><a href="queryform.html">Contact Us</a></li>
+                    <li><a href="sitemap.html">Sitemap</a></li>
+                    <li><a href="studentdetails.html">Student Details</a></li>
+                </ul>
+            </nav>
+            <h1 class="store-name store-name-large">MINDHUNTER</h1>
+            
+        </header>
 
-    <div>
-        <h1>MINDHUNTER BOOKSTORE</h1>
-        <h3><br>Popular Books</h3>
-        <ul>
-            <li>Inferno</li>
-            <li>Sherlock Holmes: The Complete Novels and Stories Volume 1</li>
-            <li>Sherlock Holmes: The Complete Novels and Stories Volume 2</li>
-            <li>Game of Thrones</li>
-            <li>Harry Potter and The Chamber of Secrets</li>
-            <li>Harry Potter and The Prisoner of Azkaban</li>
-        </ul>
+
+
+        <section class="container content-section">
+            <h2 class="section-header">Popular Books</h2>
+            <div class="store-items">
+
+                <div class="store-item">
+                    <span class="store-item-title">Inferno</span>
+                    <img class="store-item-image" src="images/dan-brown-inferno-cover.jpg" width="250" height="350"> 
+                    <div class="store-item-details">
+                        <span class="store-item-price">bla</span>
+                        <button class="btn btn-primary store-item-button" type="button">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="store-item">
+                    <span class="store-item-title">Sherlock Holmes: The Complete Novels and Stories Volume 1</span>
+                    <img class="store-item-image" src="images/Sherlock Holmes Volume 1.jpg" width="250" height="350"> 
+                    <div class="store-item-details">
+                        <span class="store-item-price">bla</span>
+                        <button class="btn btn-primary store-item-button" type="button">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="store-item">
+                    <span class="store-item-title">Sherlock Holmes: The Complete Novels and Stories Volume 2</span>
+                    <img class="store-item-image" src="images/Sherlock Holmes Volume 2.jpg" width="250" height="350"> 
+                    <div class="store-item-details">
+                        <span class="store-item-price">bla</span>
+                        <button class="btn btn-primary store-item-button" type="button">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="store-item">
+                    <span class="store-item-title">Harry Potter and The Chamber of Secrets</span>
+                    <img class="store-item-image" src="images/Harry Potter and the Chamber of Secrets.jpg" width="250" height="350"> 
+                    <div class="store-item-details">
+                        <span class="store-item-price">bla</span>
+                        <button class="btn btn-primary store-item-button" type="button">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="store-item">
+                    <span class="store-item-title">Harry Potter and The Prisoner of Azkaban</span>
+                    <img class="store-item-image" src="images/Harry Potter and the Prisoner of Azkaban.jpg" width="250" height="350"> 
+                    <div class="store-item-details">
+                        <span class="store-item-price">bla</span>
+                        <button class="btn btn-primary store-item-button" type="button">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="store-item">
+                    <span class="store-item-title">Game of Thrones</span>
+                    <img class="store-item-image" src="images/Game of Thrones.jpg" width="250" height="350"> 
+                    <div class="store-item-details">
+                        <span class="store-item-price">bla</span>
+                        <button class="btn btn-primary store-item-button" type="button">Add to Cart</button>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="container content-section">
+            <h2 class="section-header">Stationary Items</h2>
+            <div class="store-items">
+
+                <div class="store-item">
+                    <span class="store-item-title">Pens</span>
+                    <img class="store-item-image" src="images/Pens.jpg" width="250" height="350"> 
+                    <div class="store-item-details">
+                        <span class="store-item-price">bla</span>
+                        <button class="btn btn-primary store-item-button" type="button">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="store-item">
+                    <span class="store-item-title">Pencils</span>
+                    <img class="store-item-image" src="images/Pencils.jpeg" width="250" height="350"> 
+                    <div class="store-item-details">
+                        <span class="store-item-price">bla</span>
+                        <button class="btn btn-primary store-item-button" type="button">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="store-item">
+                    <span class="store-item-title">CR and EX books</span>
+                    <img class="store-item-image" src="images/CR and EX books.png" width="250" height="350"> 
+                    <div class="store-item-details">
+                        <span class="store-item-price">bla</span>
+                        <button class="btn btn-primary store-item-button" type="button">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="store-item">
+                    <span class="store-item-title">A4 sheets</span>
+                    <img class="store-item-image" src="images/A4 sheets.jpg" width="250" height="350"> 
+                    <div class="store-item-details">
+                        <span class="store-item-price">bla</span>
+                        <button class="btn btn-primary store-item-button" type="button">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="store-item">
+                    <span class="store-item-title">Files</span>
+                    <img class="store-item-image" src="images/Files.jpg" width="250" height="350"> 
+                    <div class="store-item-details">
+                        <span class="store-item-price">bla</span>
+                        <button class="btn btn-primary store-item-button" type="button">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="store-item">
+                    <span class="store-item-title">File Holders</span>
+                    <img class="store-item-image" src="images/File Holders.jpg" width="250" height="350"> 
+                    <div class="store-item-details">
+                        <span class="store-item-price">bla</span>
+                        <button class="btn btn-primary store-item-button" type="button">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="store-item">
+                    <span class="store-item-title">Clear Bags</span>
+                    <img class="store-item-image" src="images/Clear Bags.jpg" width="250" height="350"> 
+                    <div class="store-item-details">
+                        <span class="store-item-price">bla</span>
+                        <button class="btn btn-primary store-item-button" type="button">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="store-item">
+                    <span class="store-item-title">Pen Holders</span>
+                    <img class="store-item-image" src="images/Pen holders.jpg" width="250" height="350"> 
+                    <div class="store-item-details">
+                        <span class="store-item-price">bla</span>
+                        <button class="btn btn-primary store-item-button" type="button">Add to Cart</button>
+                    </div>
+                </div>
+
+            </div>
+        </section>
         
-        <h3><br>Stationary Items</h3>
+
+        <section class="container content-section">
+            <h2 class="section-header">CART</h2>
+
+            <div class="cart-row">
+                <span class="cart-item cart-header cart-column">ITEM</span>
+                <span class="cart-price cart-header cart-column">PRICE</span>
+                <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+            </div>
+
+            <div class="cart-items">
+
+                <div class="cart-row">
+                    <div class="cart-item cart-column">
+                        <img class="cart-item-image" src="images/Harry Potter and the Chamber of Secrets.jpg" width="150" height="200">
+                        <span class="cart-item-title">Harry Potter and The Chamber of Secrets</span>
+                    </div>
+                    <span class="cart-price cart-column">blaaa</span>
+                    <div class="cart-quantity cart-column">
+                        <input class="cart-quantity-input" type="number" value="1">
+                        <button class="btn btn-danger" type="button">REMOVE</button> 
+                    </div>
+                </div>
+
+                <div class="cart-row">
+                    <div class="cart-item cart-column">
+                        <img class="cart-item-image" src="images/Clear Bags.jpg" width="150" height="200">
+                        <span class="cart-item-title">Clear bags</span>
+                    </div>
+                    <span class="cart-price cart-column">blaaa</span>
+                    <div class="cart-quantity cart-column">
+                        <input class="cart-quantity-input" type="number" value="2">
+                        <button class="btn btn-danger" type="button">REMOVE</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="cart-total">
+                <strong class="cart-total-title">Total</strong>
+                <span class="cart-total-price">blaaa</span>
+            </div>
+
+            <button class="btn btn-primary btn-purchase" type="button">PURCHASE</button>
+        </section>
+
+        <footer class="main-footer">
+            <div class="container main-footer-container">
+                <h3 class="store-name">MINDHUNTER</h3>
+            </div>
+        </footer>
         
-        <ul>
-            <li>Pens & Pencils</li>
-            <li>EX and CR Books</li>
-            <li>A4 sheets</li>
-            <li>Files & File Holders</li>
-            <li>Clear Bags</li>
-            <li>Pen Holders</li>
-        </ul>
-    </div>
-</body>
+            
+
+
+
+
+
+        
+
+        
+
+
+        <div>
+            <h1>MINDHUNTER BOOKSTORE</h1>
+            <h3><br>Popular Books</h3>
+            <ul>
+                <li>Inferno</li>
+                <li>Sherlock Holmes: The Complete Novels and Stories Volume 1</li>
+                <li>Sherlock Holmes: The Complete Novels and Stories Volume 2</li>
+                <li>Harry Potter and The Chamber of Secrets</li>
+                <li>Harry Potter and The Prisoner of Azkaban</li>
+                <li>Game of Thrones</li>
+            </ul>
+            
+            <h3><br>Stationary Items</h3>
+            
+            <ul>
+                <li>Pens</li>
+                <li>Pencils</li>
+                <li>CR and EX Books</li>
+                <li>A4 sheets</li>
+                <li>Files</li>
+                <li>File Holders</li>
+                <li>Clear Bags</li>
+                <li>Pen Holders</li>
+            </ul>
+        </div>
+    </body>
 </html>
