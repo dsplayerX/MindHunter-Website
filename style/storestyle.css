@@ -1,11 +1,4 @@
 /* Store CSS - Nanduni */
-
-* {
-    box-sizing: border-box;
-    font-family: Raleway;
-    color: #777;
-}
-
 html, body {
     margin: 0;
     padding: 0;
@@ -24,7 +17,6 @@ html, body {
     text-align: center;
     margin: 0;
     font-size: 4em;
-    font-family: "Booter - Zero Zero";
     font-weight: normal;
     color: white;
 }
@@ -44,7 +36,6 @@ html, body {
 }
 
 .section-header {
-    font-family: "Metal Mania";
     font-weight: normal;
     color: #333;
     text-align: center;
@@ -107,14 +98,14 @@ html, body {
 
 .btn-primary {
     color: white;
-    background-color: #56CCF2;
+    background-color:rgb(156, 68, 9);
     border: none;
     border-radius: .3em;
     font-weight: bold;
 }
 
 .btn-primary:hover {
-    background-color: #2D9CDB;
+    background-color: rgb(209, 118, 57);
 }
 
 .store-item {
