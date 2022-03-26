@@ -6,6 +6,7 @@
     <title>Mindhunter Bookstore &middot; Explore</title>
     <link rel="shortcut icon" href="images/title-logo.png" type="image/x-icon">
     <link rel="stylesheet" href="style/navbarstyle.css"/>
+    <link rel="stylesheet" href="../WDD-4COSC011C-CW-Project/style/thumbnail.css">
 </head>
 <body>
     <!--Navigation Bar - Dumindu-->
@@ -21,6 +22,147 @@
             <li><a href="studentdetails.html">Student Details</a></li>
         </ul>
     </nav>
+
+    <div class="main2">
+        <h1 class="heading2"><i>Book Colloection</i></h1>
+    </div>
+
+    <div class="second">
+        <form>
+            <div class="menus">
+                <label class="lbl">Select background color:</label>
+                <select class="selectColor" onclick="changeColor (this)">
+                    <option value="#ffffff">White</option>
+                    <option value="black">Black</option>
+                    <option value="MediumSpringGreen">Green</option>
+                    <option value="#80042f">Maroon</option>
+                    <option value="#e9967a">Light Pink</option>
+                </select>
+
+                <label class="lbl">Select text color:</label>
+                <select class="selectText"  onclick="changeTxt (this)">
+                    <option value="black">Black</option>
+                    <option value="white">white</option>
+                    <option value="#4ef578">Green</option>
+                    <option value="#babfd9">Gray</option>
+                    <option value="yellow">Yellow</option>
+                </select>
+            </div>
+           
+            <div class="container2">
+                <ul class="imagess">
+                    <li><img id="img1" src="../WDD-4COSC011C-CW-Project/images/Adventure.jpg" alt="book1" width="180" height="130"></li>
+                    <li><img id="img2" src="../WDD-4COSC011C-CW-Project/images/Comics.jpg" alt="book2" width="180" height="130"></li>
+                    <li><img id="img3" src="../WDD-4COSC011C-CW-Project/images/Detctive.jpg" alt="book3" width="180" height="130"></li>
+                    <li><img id="img4" src="../WDD-4COSC011C-CW-Project/images/Fantasy.jpg" alt="book4" width="180" height="130"></li>
+                    <li><img id="img5" src="../WDD-4COSC011C-CW-Project/images/Horror.jpg" alt="book5" width="180" height="130"></li>
+                </ul>
+            </div>
+
+            <div class="bigpic" id="bigpic">    
+                <div class="data">
+                    <img class="picture" src="../WDD-4COSC011C-CW-Project/images/Adventure.jpg" alt="fort" width="750" height="250">
+                    <div class="title">
+                        <h2 class="des-heading">Action and Adventure</h2>
+                        <p>Books in the action adventure genre not only have the action sequences seen in the action genre,but the plots continue into an adventure that takes the characters on a personal journey or to different geographical location.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="bigpic" id="bigpic2">    
+                <div class="data">
+                    <img class="picture" src="../WDD-4COSC011C-CW-Project/images/Comics.jpg" alt="colombo" width="750" height="250">
+                    <div class="title">
+                        <h2 class="des-heading">Comic book</h2>
+                        <p>comic book, bound collection of comic strips, usually in chronological sequence, typically telling a single story or a series of different stories.
+                            </p>
+                    </div>
+                </div>
+            </div>
+           
+            <div class="bigpic" id="bigpic3">    
+                <div class="data">
+                    <img class="picture" src="../WDD-4COSC011C-CW-Project/images/Detctive.jpg" alt="kandy" width="750" height="250">
+                    <div class="title">
+                        <h2 class="des-heading">Detective</h2>
+                        <p>Some mystery books are non-fiction. Mystery fiction can be detective stories in which the emphasis is on the puzzle or suspense element and its logical solution such as a whodunit. Mystery fiction can be contrasted with hardboiled detective stories, which focus on action and gritty realism</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="bigpic" id="bigpic4">    
+                <div class="data">
+                    <img class="picture" src="../WDD-4COSC011C-CW-Project/images/Fantasy.jpg" alt="unawatuna" width="750" height="250">
+                    <div class="title">
+                        <h2 class="des-heading">Fantasy</h2>
+                        <p>Fantasy is a genre of speculative fiction involving magical elements, typically set in a fictional universe and sometimes inspired by mythology and folklore. Its roots are in oral traditions, which then became fantasy literature and drama.
+                            </p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="bigpic" id="bigpic5">    
+                <div class="data">
+                    <img class="picture" src="../WDD-4COSC011C-CW-Project/images/Horror.jpg" alt="fort" width="750" height="250">
+                    <div class="title">
+                        <h2 class="des-heading">Horror</h2>
+                        <p>horror story, a story in which the focus is on creating a feeling of fear. Such tales are of ancient origin and form a substantial part of the body of folk literature. They can feature supernatural elements such as ghosts, witches, or vampires, or they can address more realistic psychological fears
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <script>
+        window.onload = function(){
+            alert("Move the cursor over an image to see a description");
+        }
+        
+        function changeColor(getColor){
+            let selectColor = getColor.value;
+            document.body.style.backgroundColor = selectColor;
+        }
+        function changeTxt(getColor){
+            let selectText = getColor.value;
+            document.body.style.color = selectText;
+        }
+
+        document.getElementById("img1").addEventListener("mouseover", function(){
+            document.getElementById("bigpic").style.display="block";
+        });
+        document.getElementById("img1").addEventListener("mouseout", function(){
+            document.getElementById("bigpic").style.display="none";
+        });
+        
+        document.getElementById("img2").addEventListener("mouseover", function(){
+            document.getElementById("bigpic2").style.display="block";
+        });
+        document.getElementById("img2").addEventListener("mouseout", function(){
+            document.getElementById("bigpic2").style.display="none";
+        });
+       
+        document.getElementById("img3").addEventListener("mouseover", function(){
+            document.getElementById("bigpic3").style.display="block";
+        });
+        document.getElementById("img3").addEventListener("mouseout", function(){
+            document.getElementById("bigpic3").style.display="none";
+        });
+        
+        document.getElementById("img4").addEventListener("mouseover", function(){
+            document.getElementById("bigpic4").style.display="block";
+        });
+        document.getElementById("img4").addEventListener("mouseout", function(){
+            document.getElementById("bigpic4").style.display="none";
+        });
+        
+        document.getElementById("img5").addEventListener("mouseover", function(){
+            document.getElementById("bigpic5").style.display="block";
+        });
+        document.getElementById("img5").addEventListener("mouseout", function(){
+            document.getElementById("bigpic5").style.display="none";
+        });
+    </script>
     
 </body>
 </html>
