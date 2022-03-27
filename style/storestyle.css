@@ -11,7 +11,7 @@ html, body {
     background-image: url("../images/girl-in-bookshop.jpg");
     background-blend-mode: multiply;
     background-size: cover;
-    padding-bottom: 300px;
+    padding-bottom: 150px;
 }
 
 .store-name {
