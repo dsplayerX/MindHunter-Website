@@ -11,12 +11,12 @@ html, body {
     background-image: url("../images/girl-in-bookshop.jpg");
     background-blend-mode: multiply;
     background-size: cover;
-    padding-bottom: 150px;
+    padding-bottom: 300px;
 }
 
 .store-name {
     text-align: center;
-    padding-top: 100px;
+    padding-top: 150px;
     margin: 0;
     font-size: 4em;
     font-weight: normal;
@@ -119,9 +119,9 @@ html, body {
 }
 
 .store-item-image {
-    width: 12rem;
-    height: 15rem;
-    object-fit: cover;
+    width: 16rem;
+    height: 25rem;
+    object-fit: contain;
 }
 
 .store-item-details {

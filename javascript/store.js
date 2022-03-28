@@ -94,10 +94,32 @@ function updateCartTotal() {
         var cartRow = cartRows[i]
         var priceElement = cartRow.getElementsByClassName('cart-price')[0]
         var quantityElement = cartRow.getElementsByClassName('cart-quantity-input')[0]
-        var price = parseFloat(priceElement.innerText.replace('LKR', ''))
+        var price = parseFloat(priceElement.innerText.replace('$', ''))
         var quantity = quantityElement.value
         total = total + (price * quantity)
     }
     total = Math.round(total * 100) / 100
-    document.getElementsByClassName('cart-total-price')[0].innerText = 'LKR' + total
+    document.getElementsByClassName('cart-total-price')[0].innerText = '$' + total
+}
+
+function validateForm () {
+    let p = document.forms["storeform"]["name"].value;
+    if (p = "") {
+        alert("Name must be filled out!")
+    }
+
+    let q = document.forms["storeform"]["name"].value;
+    if (q = "") {
+        alert("Address must be filled out!")
+    }
+
+    let r = document.forms["storeform"]["name"].value;
+    if (r = "") {
+        alert("Email must be filled out!")
+    }
+
+    let s = document.forms["storeform"]["name"].value;
+    if (s = "") {
+        alert("Contact Number must be filled out!")
+    }
 }
