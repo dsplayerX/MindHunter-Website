@@ -102,7 +102,7 @@ function updateCartTotal() {
     document.getElementsByClassName('cart-total-price')[0].innerText = '$' + total
 }
 
-function validateForm () {
+function validateForm() {
     let p = document.forms["storeform"]["name"].value;
     if (p = "") {
         alert("Name must be filled out!")

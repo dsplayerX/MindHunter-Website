@@ -5,18 +5,27 @@ html, body {
     min-height: 100%;
 }
 
-.main-header {
-    background-color: rgba(0, 0, 0, .6);
-    background-position: center center;
-    background-image: url("../images/girl-in-bookshop.jpg");
-    background-blend-mode: multiply;
+body {
+    background-image: url("../images/books-ladder.jpg");
     background-size: cover;
-    padding-bottom: 300px;
+}
+
+.main-header {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    background-color: rgba(87, 54, 0, 0.75);
+    background-position: center center;
 }
 
 .store-name {
     text-align: center;
+<<<<<<< Updated upstream
     padding-top: 200px;
+=======
+>>>>>>> Stashed changes
     margin: 0;
     font-size: 4em;
     font-weight: normal;
@@ -39,7 +48,7 @@ html, body {
 
 .section-header {
     font-weight: normal;
-    color: #333;
+    color: rgb(255, 255, 255);
     text-align: center;
     font-size: 2.5em;
     margin-top: 5rem;
@@ -114,7 +123,7 @@ html, body {
     text-align: center;
     font-weight: bold;
     font-size: 1.5em;
-    color: #333;
+    color: rgb(255, 255, 255);
     margin-bottom: 15px;
 }
 
@@ -132,7 +141,8 @@ html, body {
 
 .store-item-price {
     flex-grow: 1;
-    color: #333;
+    color: rgb(255, 255, 255);
+    margin-right: 20px;
 }
 
 .store-items {
@@ -146,7 +156,7 @@ html, body {
 .cart-header {
     font-weight: bold;
     font-size: 1.25em;
-    color: #333;
+    color: rgb(255, 255, 255);
 }
 
 .cart-column {
@@ -169,7 +179,7 @@ html, body {
 .cart-price {
     width: 20%;
     font-size: 1.2em;
-    color: #333;
+    color: rgb(255, 255, 255);
 }
 
 .cart-quantity {
@@ -177,7 +187,7 @@ html, body {
 }
 
 .cart-item-title {
-    color: #333;
+    color: rgb(255, 255, 255);
     margin-left: .5em;
     font-size: 1.2em;
 }
@@ -206,7 +216,7 @@ html, body {
     border-radius: 5px;
     border: 1px solid #56CCF2;
     background-color: #eee;
-    color: #333;
+    color: rgb(72, 72, 72);
     padding: 0;
     text-align: center;
     font-size: 1.2em;
@@ -230,12 +240,12 @@ html, body {
 .cart-total-title {
     font-weight: bold;
     font-size: 1.5em;
-    color: black;
+    color: rgb(255, 255, 255);
     margin-right: 20px;
 }
 
 .cart-total-price {
-    color: #333;
+    color: rgb(255, 255, 255);
     font-size: 1.1em;
 }
 
@@ -246,7 +256,7 @@ html, body {
 }
 
 form {
-    background-color: rgba(245, 245, 245, 0.85);
+    background-color: rgba(255, 255, 255);
     border-radius:15px;
     padding: 25px;
     width: 450px;
@@ -275,4 +285,42 @@ form input {
     height: 40px;
     padding: 10px;
     border-radius: 5px;
+}
+
+.totop #backtotop {
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: whitesmoke;
+    background-color: rgb(156, 68, 9);
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+#backtotop:hover {
+    background-color: rgb(209, 118, 57);
+    transition: 0.5s;
+}
+
+.footer a{
+    text-decoration: none;
+    position: absolute;
+    display: block;
+    background-color: rgba(0, 0, 0, 0.75);
+    border-radius: 5px;
+    padding: 5px;
+    color: white;
+    right: 0;
+    
+}
+
+.footer a:visited, .footer a:link {
+    color: rgb(247, 202, 165);
+}
+
+
+.footer a:hover {
+    color: rgb(0, 0, 0);
+    background-color: rgb(253, 232, 214);
 }
