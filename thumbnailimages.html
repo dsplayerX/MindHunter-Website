@@ -115,53 +115,67 @@
     </div>
 
     <script>
-        window.onload = function(){
-            alert("Move the cursor over an image to see a description");
-        }
-        
-        function changeColor(getColor){
-            let selectColor = getColor.value;
-            document.body.style.backgroundColor = selectColor;
-        }
-        function changeTxt(getColor){
-            let selectText = getColor.value;
-            document.body.style.color = selectText;
-        }
+        let isSelected = false;
+			window.onload = function(){
+				alert("click an image to see a description");
+			}
+			
+			function changeColor(getColor){
+				let selectColor = getColor.value;
+				document.body.style.backgroundColor = selectColor;
+			}
+			function changeTxt(getColor){
+				let selectText = getColor.value;
+				document.body.style.color = selectText;
+			}
 
-        document.getElementById("img1").addEventListener("mouseover", function(){
-            document.getElementById("bigpic").style.display="block";
-        });
-        document.getElementById("img1").addEventListener("mouseout", function(){
-            document.getElementById("bigpic").style.display="none";
-        });
-        
-        document.getElementById("img2").addEventListener("mouseover", function(){
-            document.getElementById("bigpic2").style.display="block";
-        });
-        document.getElementById("img2").addEventListener("mouseout", function(){
-            document.getElementById("bigpic2").style.display="none";
-        });
-       
-        document.getElementById("img3").addEventListener("mouseover", function(){
-            document.getElementById("bigpic3").style.display="block";
-        });
-        document.getElementById("img3").addEventListener("mouseout", function(){
-            document.getElementById("bigpic3").style.display="none";
-        });
-        
-        document.getElementById("img4").addEventListener("mouseover", function(){
-            document.getElementById("bigpic4").style.display="block";
-        });
-        document.getElementById("img4").addEventListener("mouseout", function(){
-            document.getElementById("bigpic4").style.display="none";
-        });
-        
-        document.getElementById("img5").addEventListener("mouseover", function(){
-            document.getElementById("bigpic5").style.display="block";
-        });
-        document.getElementById("img5").addEventListener("mouseout", function(){
-            document.getElementById("bigpic5").style.display="none";
-        });
+			document.getElementById("img1").addEventListener("click", function(){
+					if(!isSelected){
+					document.getElementById("bigpic").style.display="block";
+					isSelected = true;
+					}else {
+					document.getElementById("bigpic").style.display="none";
+					isSelected = false;
+					}
+				});	
+			
+			document.getElementById("img2").addEventListener("click", function(){
+					if(!isSelected){
+					document.getElementById("bigpic2").style.display="block";
+					isSelected = true;
+					}else {
+					document.getElementById("bigpic2").style.display="none";
+					isSelected = false;
+					}
+				});	
+		   document.getElementById("img3").addEventListener("click", function(){
+					if(!isSelected){
+					document.getElementById("bigpic3").style.display="block";
+					isSelected = true;
+					}else {
+					document.getElementById("bigpic3").style.display="none";
+					isSelected = false;
+					}
+				});	
+			
+			document.getElementById("img4").addEventListener("click", function(){
+					if(!isSelected){
+					document.getElementById("bigpic4").style.display="block";
+					isSelected = true;
+					}else {
+					document.getElementById("bigpic4").style.display="none";
+					isSelected = false;
+					}
+				});	
+			document.getElementById("img5").addEventListener("click", function(){
+					if(!isSelected){
+					document.getElementById("bigpic5").style.display="block";
+					isSelected = true;
+					}else {
+					document.getElementById("bigpic5").style.display="none";
+					isSelected = false;
+					}
+				});	
     </script>
     
 </body>
